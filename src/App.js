@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BsCaretRightFill } from "react-icons/bs";
-import logo from "./assets/logo.jpeg";
+import logo from "./assets/logo4.webp";
 
 const icons = [
   {
@@ -80,10 +80,14 @@ const App = () => {
         bgImageStyle={{ objectFit: "cover" }}
         className=""
       >
-        <header className="grid grid-cols-12 mt-2">
-          <h1 className="col-start-2 col-span-4 text-7xl uppercase font-bold reenie-beanie-regular">
+        <header className="grid grid-cols-12">
+          {/* <h1 className="col-start-2 col-span-4 text-7xl uppercase font-bold reenie-beanie-regular">
             crossing i's dotting t's
-          </h1>
+          </h1> */}
+          <img
+            src={logo}
+            alt="Crossing I's Dotting T's"
+            className="col-start-1 col-end-6 ml-8"></img>
           <nav className="col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly">
             <a href="#merch" className="text-5xl">
               <h3>&rArr;merch</h3>
@@ -167,7 +171,7 @@ const App = () => {
       >
         <section id="streaming" className="section-3 streaming my-12">
           <div className="w-full flex flex-col justify-center items-center">
-            <h2 className="text-8xl uppercase font-bold mb-2 reenie-beanie-regular text-black bg-pink-600">
+            <h2 className="text-8xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-orange-500 rounded-lg">
               find us on spotify & apple music
             </h2>
             <Carousel
@@ -197,12 +201,12 @@ const App = () => {
         style={{ background: "linear-gradient(to top, #000000, #434343)" }}
       >
         <section id="shows" className="shows section-4 border-b-4 border-black">
-          <div className="flex justify-center">
-            <h1 className="uppercase text-black bg-pink-600 text-9xl reenie-beanie-regular mb-2 font-bold">
+          <div className="flex justify-center mb-8">
+            <h1 className="uppercase text-black bg-orange-500 text-9xl reenie-beanie-regular p-4 font-bold rounded-lg">
               upcoming Shows
             </h1>
           </div>
-          <div className="grid grid-cols-2 gap-4 text-center text-white reenie-beanie-regular mb-8">
+          <div className="grid grid-cols-2 gap-4 text-center text-white reenie-beanie-regular mb-8 mx-4">
             <div className="show-date-item">
               <h4 className="text-7xl font-bold">6/28</h4>
               <p className="text-4xl font-bold">
@@ -275,7 +279,7 @@ const App = () => {
         <section id="merch" className="section-5 archives">
           <div className="flex flex-col justify-evenly h-screen">
             <div className="w-full flex flex-col justify-center items-center">
-              <h2 className="text-9xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-pink-600">
+              <h2 className="text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-orange-500 rounded-lg">
                 Archives
               </h2>
               <Carousel
