@@ -2,3 +2,38 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+  background: black;
+}
+
+.fading {
+  animation: fadeInOut 2s infinite;
+}
+
+.section-1 button {
+  color: black;
+}
+
+.carousel-size {
+  margin: 0 auto; /* Center the carousel */
+  padding: 2rem;
+}
+
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item-size {
+  /* width: 50%; Adjust the width of each carousel item */
+  margin: 0 5%; /* Add spacing between carousel items */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item-size img {
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+  object-fit: cover;
+}
