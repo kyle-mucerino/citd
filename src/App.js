@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BsCaretRightFill } from "react-icons/bs";
 import logo from "./assets/logo4.webp";
+import logoWhite from "./assets/logo3.webp";
 
 const icons = [
   {
@@ -116,6 +117,11 @@ const App = () => {
                   listen to the new album
                 </a>
               </button>
+                <img
+                  src={logoWhite}
+                  alt="Crossing I's Dotting T's"
+                  className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
+                ></img>
               {/* <div className="text-5xl uppercase font-bold reenie-beanie-regular bg-gradient-to-r from-orange-500 to-blue-500 rounded-lg mt-4">
                 <h2 className="p-2">Discover more...</h2>
               </div>
@@ -144,7 +150,12 @@ const App = () => {
                 allowFullScreen
               ></iframe>
               <div className="w-full col-start-9 col-end-13 hidden sm:block">
-                <h1 className="text-7xl font-bold reenie-beanie-regular bg-gradient-to-r from-red-500 to-yellow-500 p-2 rounded-lg">
+                <h1
+                  className="text-7xl font-bold reenie-beanie-regular p-2 rounded-lg"
+                  style={{
+                    background: "linear-gradient(to left, #f00, #ff0)"
+                  }}
+                >
                   {" "}
                   Latest Music Video
                 </h1>
@@ -163,7 +174,12 @@ const App = () => {
             </div>
             <div className="grid grid-cols-12">
               <div className="w-full col-start-4 col-end-7 hidden sm:block">
-                <h1 className="text-7xl font-bold reenie-beanie-regular bg-gradient-to-l from-red-500 to-yellow-500 rounded-lg p-2">
+                <h1
+                  className="text-7xl font-bold reenie-beanie-regular rounded-lg p-2"
+                  style={{
+                    background: "linear-gradient(to left, #f00, #ff0)"
+                  }}
+                >
                   Latest Single
                 </h1>
                 <span
@@ -196,7 +212,12 @@ const App = () => {
       >
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
-            <h2 className="text-2xl sm:text-8xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-gradient-to-l from-red-500 to-yellow-500 rounded-lg">
+            <h2
+              className="text-2xl sm:text-8xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+              style={{
+                background: "linear-gradient(to left, #f00, #ff0)"
+              }}
+            >
               find us on spotify & apple music
             </h2>
             <Carousel
@@ -227,7 +248,12 @@ const App = () => {
       >
         <section id="shows" className="shows section-4 border-b-4 border-white">
           <div className="flex justify-center mb-8">
-            <h1 className="uppercase text-black bg-gradient-to-r from-red-500 to-yellow-500 text-4xl sm:text-9xl reenie-beanie-regular p-4 font-bold rounded-lg">
+            <h1
+              className="uppercase text-black text-4xl sm:text-9xl reenie-beanie-regular p-4 font-bold rounded-lg"
+              style={{
+                background: "linear-gradient(to left, #f00, #ff0)"
+              }}
+            >
               upcoming Shows
             </h1>
           </div>
@@ -304,7 +330,12 @@ const App = () => {
         <section id="merch" className="section-5 archives">
           <div className="flex flex-col justify-evenly h-screen">
             <div className="w-full flex flex-col justify-center items-center">
-              <h2 className="text-3xl sm:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-gradient-to-l from-red-500 to-yellow-500 rounded-lg">
+              <h2
+                className="text-3xl sm:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+                style={{
+                  background: "linear-gradient(to left, #f00, #ff0)"
+                }}
+              >
                 Archives
               </h2>
               <Carousel
