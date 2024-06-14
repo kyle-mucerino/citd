@@ -81,21 +81,24 @@ const App = () => {
         className=""
       >
         <header className="grid grid-cols-12">
-          {/* <h1 className="col-start-2 col-span-4 text-7xl uppercase font-bold reenie-beanie-regular">
-            crossing i's dotting t's
-          </h1> */}
           <img
             src={logo}
             alt="Crossing I's Dotting T's"
-            className="col-start-1 col-end-6 ml-8"></img>
-          <nav className="col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly">
-            <a href="#merch" className="text-5xl">
+            className="col-start-1 col-end-6 ml-8 hidden sm:block"
+          ></img>
+          <nav className="col-start-1 sm:col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly">
+            <a
+              href="https://crossing-i-s-dotting-ts.myshopify.com/"
+              className="text-2xl sm:text-5xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>&rArr;merch</h3>
             </a>
-            <a href="#music" className="text-5xl">
+            <a href="#music" className="text-2xl sm:text-5xl">
               <h3>&rArr;music</h3>
             </a>
-            <a href="#shows" className="text-5xl">
+            <a href="#shows" className="text-2xl sm:text-5xl">
               <h3>&rArr;shows</h3>
             </a>
           </nav>
@@ -103,19 +106,22 @@ const App = () => {
         <section className="section-1 landing-page">
           <div className="flex flex-row h-screen">
             <div className="w-full flex flex-col justify-center items-center">
-              {/* <div className="text-9xl uppercase font-bold mb-2 reenie-beanie-regular border-4 border-black bg-black">
-                <h2 className="p-2">New Album</h2>
-              </div> */}
-              <button className="bg-orange-500 rounded-lg p-2 uppercase reenie-beanie-regular font-bold fading">
+              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
                 <a
                   href="https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
-                  className="text-7xl"
+                  className="text-2xl sm:text-7xl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   listen to the new album
                 </a>
               </button>
+              {/* <div className="text-5xl uppercase font-bold reenie-beanie-regular bg-gradient-to-r from-orange-500 to-blue-500 rounded-lg mt-4">
+                <h2 className="p-2">Discover more...</h2>
+              </div>
+              <p>
+                <p className="text-9xl font-bold text-white">&darr;</p>
+              </p> */}
             </div>
           </div>
         </section>
@@ -126,34 +132,53 @@ const App = () => {
         bgImageStyle={{ objectFit: "cover" }}
         className=""
       >
-        <section id="music" className="section-2 music">
+        <section id="videos" className="section-2 videos">
           <div className="flex flex-col p-4">
-            <div className="flex flex-row">
+            <div className="grid grid-cols-12">
               <iframe
-                className="w-1/2 aspect-video p-2"
+                className="w-full col-start-1 col-end-7 aspect-video p-2 hidden sm:block"
                 src="https://www.youtube.com/embed/rvG0TKs1vu0"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              <div className="w-1/2 text-right">
-                <h1 className="text-7xl font-bold reenie-beanie-regular">
+              <div className="w-full col-start-9 col-end-13 hidden sm:block">
+                <h1 className="text-7xl font-bold reenie-beanie-regular bg-gradient-to-r from-red-500 to-yellow-500 p-2 rounded-lg">
                   {" "}
                   Latest Music Video
                 </h1>
-                <span style={{ fontSize: "12rem" }}>&#8592;</span>
+                <span
+                  style={{
+                    fontSize: "16rem",
+                    position: "absolute",
+                    top: "0%",
+                    right: "0%"
+                  }}
+                  className=""
+                >
+                  &#8592;
+                </span>
               </div>
             </div>
-            <div className="flex flex-row items-end">
-              <div className="w-1/2 text-right">
-                <h1 className="text-8xl font-bold reenie-beanie-regular">
+            <div className="grid grid-cols-12">
+              <div className="w-full col-start-4 col-end-7 hidden sm:block">
+                <h1 className="text-7xl font-bold reenie-beanie-regular bg-gradient-to-l from-red-500 to-yellow-500 rounded-lg p-2">
                   Latest Single
                 </h1>
-                <span style={{ fontSize: "12rem" }}>&#8594;</span>
+                <span
+                  style={{
+                    fontSize: "16rem",
+                    position: "absolute",
+                    top: "50%",
+                    right: "50%"
+                  }}
+                >
+                  &#8594;
+                </span>
               </div>
               <iframe
-                className="w-1/2 aspect-video p-2"
+                className="w-full col-span-12 sm:col-start-7 col-end-13 aspect-video p-2"
                 src="https://www.youtube.com/embed/akLPERuJNV4"
                 title="YouTube video player"
                 frameBorder="0"
@@ -169,9 +194,9 @@ const App = () => {
         strength={500}
         style={{ background: "linear-gradient(to bottom, #000000, #434343)" }}
       >
-        <section id="streaming" className="section-3 streaming my-12">
+        <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
-            <h2 className="text-8xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-orange-500 rounded-lg">
+            <h2 className="text-2xl sm:text-8xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-gradient-to-l from-red-500 to-yellow-500 rounded-lg">
               find us on spotify & apple music
             </h2>
             <Carousel
@@ -200,9 +225,9 @@ const App = () => {
         strength={500}
         style={{ background: "linear-gradient(to top, #000000, #434343)" }}
       >
-        <section id="shows" className="shows section-4 border-b-4 border-black">
+        <section id="shows" className="shows section-4 border-b-4 border-white">
           <div className="flex justify-center mb-8">
-            <h1 className="uppercase text-black bg-orange-500 text-9xl reenie-beanie-regular p-4 font-bold rounded-lg">
+            <h1 className="uppercase text-black bg-gradient-to-r from-red-500 to-yellow-500 text-4xl sm:text-9xl reenie-beanie-regular p-4 font-bold rounded-lg">
               upcoming Shows
             </h1>
           </div>
@@ -279,7 +304,7 @@ const App = () => {
         <section id="merch" className="section-5 archives">
           <div className="flex flex-col justify-evenly h-screen">
             <div className="w-full flex flex-col justify-center items-center">
-              <h2 className="text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-orange-500 rounded-lg">
+              <h2 className="text-3xl sm:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black bg-gradient-to-l from-red-500 to-yellow-500 rounded-lg">
                 Archives
               </h2>
               <Carousel
@@ -310,7 +335,7 @@ const App = () => {
       </Parallax>
       <footer className="bg-black border-t-4 border-white text-white py-6">
         <div className="text-center flex items-center justify-center space-x-2 mb-4">
-          <h2 className="text-6xl font-bold reenie-beanie-regular uppercase">
+          <h2 className="text-4xl sm:text-6xl font-bold reenie-beanie-regular uppercase">
             Connect with us
           </h2>
           <BsCaretRightFill className="text-4xl" />
