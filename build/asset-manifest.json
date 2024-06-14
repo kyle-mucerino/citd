@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.273d7528.css",
+    "main.js": "/static/js/main.b2073b38.js",
+    "static/media/poster1.jpeg": "/static/media/poster1.803d42d7c0b52430ead9.jpeg",
+    "static/media/poster2.jpeg": "/static/media/poster2.c17f26d3e4f9c10566a5.jpeg",
+    "static/media/poster5.jpeg": "/static/media/poster5.c3bb1844c6efceb7e122.jpeg",
+    "static/media/spotify3.jpeg": "/static/media/spotify3.66c40a503471ddece13f.jpeg",
+    "static/media/spotify2.jpeg": "/static/media/spotify2.86ba15695d82358fb191.jpeg",
+    "static/media/poster3.jpeg": "/static/media/poster3.e50a6cec19a97f9bd803.jpeg",
+    "static/media/spotify1.jpeg": "/static/media/spotify1.2930f0a56067fb56383e.jpeg",
+    "static/media/spotify5.jpeg": "/static/media/spotify5.82108c42cc7c773cc773.jpeg",
+    "static/media/spotify4.jpeg": "/static/media/spotify4.db5a8a686b336b022b09.jpeg",
+    "static/media/yourstruly5.jpeg": "/static/media/yourstruly5.b4eb4f9d11e2e2e6c7aa.jpeg",
+    "static/media/poster4.jpeg": "/static/media/poster4.55536ed43a47400b95e0.jpeg",
+    "static/media/band7.jpeg": "/static/media/band7.8a6bfc6c5bf56f4b09d5.jpeg",
+    "static/media/logo4.webp": "/static/media/logo4.a00f4390f1ca55ec68ee.webp",
+    "static/media/logo3.webp": "/static/media/logo3.719a99f30ee8c715b706.webp",
+    "index.html": "/index.html",
+    "main.273d7528.css.map": "/static/css/main.273d7528.css.map",
+    "main.b2073b38.js.map": "/static/js/main.b2073b38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.273d7528.css",
+    "static/js/main.b2073b38.js"
+  ]
+}
