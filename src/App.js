@@ -76,10 +76,11 @@ const App = () => {
   return (
     <article className="">
       <Parallax
+        speed={10}
         bgImage={bgImage1}
         strength={500}
         bgImageStyle={{ objectFit: "cover" }}
-        className=""
+        className="bg1"
       >
         <header className="grid grid-cols-12">
           <img
@@ -117,11 +118,11 @@ const App = () => {
                   listen to the new album
                 </a>
               </button>
-                <img
-                  src={logoWhite}
-                  alt="Crossing I's Dotting T's"
-                  className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
-                ></img>
+              <img
+                src={logoWhite}
+                alt="Crossing I's Dotting T's"
+                className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
+              ></img>
               {/* <div className="text-5xl uppercase font-bold reenie-beanie-regular bg-gradient-to-r from-orange-500 to-blue-500 rounded-lg mt-4">
                 <h2 className="p-2">Discover more...</h2>
               </div>
@@ -133,6 +134,7 @@ const App = () => {
         </section>
       </Parallax>
       <Parallax
+        speed={10}
         bgImage={bgImage2}
         strenth={500}
         bgImageStyle={{ objectFit: "cover" }}
@@ -206,6 +208,7 @@ const App = () => {
         </section>
       </Parallax>
       <Parallax
+        speed={10}
         bgImageStyle={{ objectFit: "contain" }}
         strength={500}
         style={{ background: "linear-gradient(to bottom, #000000, #434343)" }}
@@ -241,6 +244,7 @@ const App = () => {
         </section>
       </Parallax>
       <Parallax
+        speed={10}
         bgImageStyle={{ objectFit: "contain" }}
         strength={500}
         style={{ background: "linear-gradient(to top, #000000, #434343)" }}
@@ -322,6 +326,7 @@ const App = () => {
         </section>
       </Parallax>
       <Parallax
+        speed={10}
         bgImageStyle={{ objectFit: "contain" }}
         strength={500}
         style={{ background: "linear-gradient(to bottom, #000000, #434343)" }}
