@@ -223,11 +223,10 @@ const App = () => {
             <Carousel
               showThumbs={false}
               showStatus={false}
-              infiniteLoop
               useKeyboardArrows
               centerMode={true}
-              centerSlidePercentage={25}
-              autoPlay
+              autoplay
+              centerSlidePercentage={50}
               className="carousel-size"
             >
               {merchandise.map((item, index) => (
@@ -328,8 +327,8 @@ const App = () => {
         style={{ background: "linear-gradient(to bottom, #000000, #434343)" }}
       >
         <section id="merch" className="section-5 archives">
-          <div className="flex flex-col justify-evenly h-screen">
-            <div className="w-full flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-evenly">
+            <div className="w-full flex flex-col justify-center items-center mt-4">
               <h2
                 className="text-3xl sm:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
                 style={{
@@ -341,11 +340,10 @@ const App = () => {
               <Carousel
                 showThumbs={false}
                 showStatus={false}
-                infiniteLoop
                 useKeyboardArrows
-                autoPlay
                 centerMode={true}
-                centerSlidePercentage={25}
+                autoplay
+                centerSlidePercentage={40}
                 className="carousel-size"
               >
                 {albumPosters.map((poster, index) => (
