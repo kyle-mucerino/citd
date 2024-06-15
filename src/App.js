@@ -76,9 +76,8 @@ const App = () => {
   return (
     <article className="">
       <Parallax
-        speed={10}
         bgImage={bgImage1}
-        strength={500}
+        strength={200}
         bgImageStyle={{ objectFit: "cover" }}
         className="bg1"
       >
@@ -134,9 +133,8 @@ const App = () => {
         </section>
       </Parallax>
       <Parallax
-        speed={10}
         bgImage={bgImage2}
-        strenth={500}
+        strength={300}
         bgImageStyle={{ objectFit: "cover" }}
         className=""
       >
@@ -208,9 +206,8 @@ const App = () => {
         </section>
       </Parallax>
       <Parallax
-        speed={10}
         bgImageStyle={{ objectFit: "contain" }}
-        strength={500}
+        strength={300}
         style={{ background: "linear-gradient(to bottom, #000000, #434343)" }}
       >
         <section id="music" className="section-3 music my-12">
@@ -244,9 +241,8 @@ const App = () => {
         </section>
       </Parallax>
       <Parallax
-        speed={10}
         bgImageStyle={{ objectFit: "contain" }}
-        strength={500}
+        strength={300}
         style={{ background: "linear-gradient(to top, #000000, #434343)" }}
       >
         <section id="shows" className="shows section-4 border-b-4 border-white">
@@ -326,9 +322,8 @@ const App = () => {
         </section>
       </Parallax>
       <Parallax
-        speed={10}
         bgImageStyle={{ objectFit: "contain" }}
-        strength={500}
+        strength={300}
         style={{ background: "linear-gradient(to bottom, #000000, #434343)" }}
       >
         <section id="merch" className="section-5 archives">

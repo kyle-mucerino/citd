@@ -16,13 +16,6 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width: 480px) {
-  .bg1 {
-    height: 100%;
-    width: 100%;
-  }
-}
-
 .carousel-item-size {
   /* width: 50%; Adjust the width of each carousel item */
   margin: 0 5%; /* Add spacing between carousel items */
