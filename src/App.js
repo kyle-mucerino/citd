@@ -79,7 +79,7 @@ const App = () => {
         bgImage={bgImage1}
         strength={200}
         bgImageStyle={{ objectFit: "cover" }}
-        className="bg1"
+        className="bg1 hidden sm:block"
       >
         <header className="grid grid-cols-12">
           <img
@@ -109,7 +109,7 @@ const App = () => {
             <div className="w-full flex flex-col justify-center items-center">
               <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
                 <a
-                  href="https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+                  href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
                   className="text-2xl sm:text-7xl"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -132,11 +132,52 @@ const App = () => {
           </div>
         </section>
       </Parallax>
+      <div className="sm:hidden mobile-1">
+        <header className="grid grid-cols-12">
+          <nav className="col-start-1 sm:col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly text-white">
+            <a
+              href="https://crossing-i-s-dotting-ts.myshopify.com/"
+              className="text-3xl sm:text-5xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>&rArr;merch</h3>
+            </a>
+            <a href="#music" className="text-3xl sm:text-5xl">
+              <h3>&rArr;music</h3>
+            </a>
+            <a href="#shows" className="text-3xl sm:text-5xl">
+              <h3>&rArr;shows</h3>
+            </a>
+          </nav>
+        </header>
+        <section className="section-1 landing-page">
+          <div className="flex flex-row h-screen">
+            <div className="w-full flex flex-col justify-center items-center">
+              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
+                <a
+                  href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
+                  className="text-2xl sm:text-7xl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  listen to the new album
+                </a>
+              </button>
+              <img
+                src={logoWhite}
+                alt="Crossing I's Dotting T's"
+                className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
+              ></img>
+            </div>
+          </div>
+        </section>
+      </div>
       <Parallax
         bgImage={bgImage2}
         strength={300}
         bgImageStyle={{ objectFit: "cover" }}
-        className=""
+        className="hidden sm:block"
       >
         <section id="videos" className="section-2 videos">
           <div className="flex flex-col p-4">
@@ -205,6 +246,26 @@ const App = () => {
           </div>
         </section>
       </Parallax>
+      <section id="videos" className="mobile-2 sm:hidden">
+        <div className="flex flex-col p-4 h-screen justify-evenly">
+          <iframe
+            className="w-full aspect-video p-2"
+            src="https://www.youtube.com/embed/rvG0TKs1vu0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <iframe
+            className="w-full aspect-video p-2"
+            src="https://www.youtube.com/embed/akLPERuJNV4"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </section>
       <Parallax
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
