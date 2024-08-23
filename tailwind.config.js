@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       keyframes: {
         colorCycle: {
-          "0%, 100%": { background: "linear-gradient(to left, #f00, #ff0)" },
-          "50%": { background: "linear-gradient(to left, #ff0, #f00)" }
+          "0%, 100%": {
+            background: "linear-gradient(to left, #fe8c00,#f83600)"
+          },
+          "50%": { background: "linear-gradient(to right, #fe8c00,#f83600)" }
         }
       },
       animation: {

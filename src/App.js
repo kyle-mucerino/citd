@@ -24,7 +24,9 @@ const icons = [
 ];
 
 const bgImage1 = require("./assets/yourstruly5.jpeg");
-const bgImage2 = require("./assets/band7.jpeg");
+const logo5 = require("./assets/logo.jpeg");
+const logo2 = require("./assets/logo2.jpeg");
+// const bgImage2 = require("./assets/band7.jpeg");
 
 const albumPosters = [
   {
@@ -107,7 +109,7 @@ const App = () => {
         <section className="section-1 landing-page">
           <div className="flex flex-row h-screen">
             <div className="w-full flex flex-col justify-center items-center">
-              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
+              <button className="rounded-lg p-2 uppercase reenie-beanie-regular text-black font-bold animate-colorCycle">
                 <a
                   href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
                   className="text-2xl sm:text-7xl"
@@ -174,65 +176,64 @@ const App = () => {
         </section>
       </div>
       <Parallax
-        bgImage={bgImage2}
+        // bgImage={bgImage2}
         strength={300}
         bgImageStyle={{ objectFit: "cover" }}
         className="hidden sm:block"
+        style={{
+          background: "linear-gradient(to bottom, #000428 , #004e92)"
+        }}
       >
         <section id="videos" className="section-2 videos">
           <div className="flex flex-col p-4">
-            <div className="grid grid-cols-12">
+            <div className="flex flex-row">
               <iframe
-                className="w-full col-start-1 col-end-7 aspect-video p-2 hidden sm:block"
+                className="w-full aspect-video p-2 hidden sm:block"
                 src="https://www.youtube.com/embed/rvG0TKs1vu0"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              <div className="w-full col-start-9 col-end-13 hidden sm:block">
-                <h1
-                  className="text-7xl font-bold reenie-beanie-regular p-2 rounded-lg"
-                  style={{
-                    background: "linear-gradient(to left, #f00, #ff0)"
-                  }}
-                >
-                  {" "}
-                  Latest Music Video
-                </h1>
-                <span
-                  style={{
-                    fontSize: "16rem",
-                    position: "absolute",
-                    top: "0%",
-                    right: "0%"
-                  }}
-                  className=""
-                >
-                  &#8592;
-                </span>
+
+              <div className="w-2/3 flex-col hidden sm:block">
+                <div>
+                  <h1
+                    className="text-7xl text-black font-bold reenie-beanie-regular p-2 rounded-lg text-center"
+                    style={{
+                      background: "linear-gradient(to left, #fe8c00,#f83600)"
+                    }}
+                  >
+                    {" "}
+                    &#8592;Latest Music Video
+                  </h1>
+                </div>
+                <div>
+                  <img
+                    src={logo2}
+                    alt="logo"
+                    className="h-72 mt-12 ml-36 rounded-3xl"
+                  ></img>
+                </div>
               </div>
             </div>
-            <div className="grid grid-cols-12">
-              <div className="w-full col-start-4 col-end-7 hidden sm:block">
+            <div className="flex flex-row">
+              <div className="w-3/5 flex-col hidden sm:block text-center">
                 <h1
-                  className="text-7xl font-bold reenie-beanie-regular rounded-lg p-2"
+                  className="text-7xl text-black font-bold reenie-beanie-regular rounded-lg p-2"
                   style={{
-                    background: "linear-gradient(to left, #f00, #ff0)"
+                    background: "linear-gradient(to left, #fe8c00,#f83600)"
                   }}
                 >
-                  Latest Single
+                  Latest Single{" "}&#9834; &#8594;
                 </h1>
-                <span
-                  style={{
-                    fontSize: "16rem",
-                    position: "absolute",
-                    top: "50%",
-                    right: "50%"
-                  }}
-                >
-                  &#8594;
-                </span>
+                <div>
+                  <img
+                    src={logo5}
+                    alt="logo"
+                    className="h-72 mt-12 ml-36 rounded-3xl"
+                  ></img>
+                </div>
               </div>
               <iframe
                 className="w-full col-span-12 sm:col-start-7 col-end-13 aspect-video p-2"
@@ -269,14 +270,16 @@ const App = () => {
       <Parallax
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
-        style={{ background: "linear-gradient(to bottom, #000000, #434343)" }}
+        style={{
+          background: "linear-gradient(to top, #000428 , #004e92)"
+        }}
       >
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
               className="text-2xl sm:text-8xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
               style={{
-                background: "linear-gradient(to left, #f00, #ff0)"
+                background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
             >
               find us on spotify & apple music
@@ -304,14 +307,16 @@ const App = () => {
       <Parallax
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
-        style={{ background: "linear-gradient(to top, #000000, #434343)" }}
+        style={{
+          background: "linear-gradient(to bottom, #000428 , #004e92)"
+        }}
       >
         <section id="shows" className="shows section-4 border-b-4 border-white">
           <div className="flex justify-center mb-8">
             <h1
               className="uppercase text-black text-4xl sm:text-9xl reenie-beanie-regular p-4 font-bold rounded-lg"
               style={{
-                background: "linear-gradient(to left, #f00, #ff0)"
+                background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
             >
               upcoming Shows
@@ -385,7 +390,9 @@ const App = () => {
       <Parallax
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
-        style={{ background: "linear-gradient(to bottom, #000000, #434343)" }}
+        style={{
+          background: "linear-gradient(to top, #000428 , #004e92)"
+        }}
       >
         <section id="merch" className="section-5 archives">
           <div className="flex flex-col justify-evenly">
@@ -393,7 +400,7 @@ const App = () => {
               <h2
                 className="text-3xl sm:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
                 style={{
-                  background: "linear-gradient(to left, #f00, #ff0)"
+                  background: "linear-gradient(to left, #fe8c00,#f83600)"
                 }}
               >
                 Archives
