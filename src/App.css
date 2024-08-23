@@ -12,16 +12,17 @@ body {
 }
 
 .mobile-1 {
-  background: linear-gradient(to bottom, #000000, #434343);
+  background: linear-gradient(to bottom, #000428 , #004e92);
 }
 
 .mobile-2 {
-  background: linear-gradient(to bottom, #434343, #000000);
+  background: linear-gradient(to bottom, #000428 , #004e92);
 }
 
 .carousel .slide {
   display: flex;
   justify-content: center;
+  padding: 2.5rem;
 }
 
 .carousel-item-size {
@@ -38,6 +39,20 @@ body {
   object-fit: cover;
 }
 
-.carousel .control-dots .dot {
-  background-color: red;
+/* Target the left arrow */
+.carousel .control-prev.control-arrow {
+  width: 50px; /* Adjust width to increase arrow size */
+  height: 50px; /* Adjust height to increase arrow size */
 }
+
+/* Target the right arrow */
+.carousel .control-next.control-arrow {
+  width: 50px; /* Adjust width to increase arrow size */
+  height: 50px; /* Adjust height to increase arrow size */
+}
+
+/* Optional: Add additional styling like background color or hover effects */
+.carousel .control-arrow {
+  border-radius: 50%; /* Make the arrows circular */
+}
+

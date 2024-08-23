@@ -74,6 +74,7 @@ const merchandise = [
   }
 ];
 
+
 const App = () => {
   return (
     <article className="">
@@ -124,12 +125,6 @@ const App = () => {
                 alt="Crossing I's Dotting T's"
                 className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
               ></img>
-              {/* <div className="text-5xl uppercase font-bold reenie-beanie-regular bg-gradient-to-r from-orange-500 to-blue-500 rounded-lg mt-4">
-                <h2 className="p-2">Discover more...</h2>
-              </div>
-              <p>
-                <p className="text-9xl font-bold text-white">&darr;</p>
-              </p> */}
             </div>
           </div>
         </section>
@@ -171,6 +166,20 @@ const App = () => {
                 alt="Crossing I's Dotting T's"
                 className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
               ></img>
+              {/* <div className="text-5xl uppercase font-bold reenie-beanie-regular text-white rounded-lg mt-4">
+                <h2 className="p-2">Discover more...</h2>
+              </div>
+              <p>
+                <p className="text-9xl font-bold text-white">&darr;</p>
+              </p> */}
+              <iframe
+                className="w-full aspect-video p-4"
+                src="https://www.youtube.com/embed/rvG0TKs1vu0"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </section>
@@ -217,7 +226,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row">
+            <div className="flex flex-row mt-12">
               <div className="w-3/5 flex-col hidden sm:block text-center">
                 <h1
                   className="text-7xl text-black font-bold reenie-beanie-regular rounded-lg p-2"
@@ -225,7 +234,7 @@ const App = () => {
                     background: "linear-gradient(to left, #fe8c00,#f83600)"
                   }}
                 >
-                  Latest Single{" "}&#9834; &#8594;
+                  Latest Single &#9834; &#8594;
                 </h1>
                 <div>
                   <img
@@ -247,7 +256,7 @@ const App = () => {
           </div>
         </section>
       </Parallax>
-      <section id="videos" className="mobile-2 sm:hidden">
+      {/* <section id="videos" className="mobile-2 sm:hidden">
         <div className="flex flex-col p-4 h-screen justify-evenly">
           <iframe
             className="w-full aspect-video p-2"
@@ -266,7 +275,7 @@ const App = () => {
             allowFullScreen
           ></iframe>
         </div>
-      </section>
+      </section> */}
       <Parallax
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
@@ -277,7 +286,7 @@ const App = () => {
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
-              className="text-2xl sm:text-8xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+              className="text-2xl sm:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -289,7 +298,6 @@ const App = () => {
               showStatus={false}
               useKeyboardArrows
               centerMode={true}
-              autoplay
               centerSlidePercentage={50}
               className="carousel-size"
             >
@@ -314,7 +322,7 @@ const App = () => {
         <section id="shows" className="shows section-4 border-b-4 border-white">
           <div className="flex justify-center mb-8">
             <h1
-              className="uppercase text-black text-4xl sm:text-9xl reenie-beanie-regular p-4 font-bold rounded-lg"
+              className="uppercase text-black text-4xl sm:text-7xl reenie-beanie-regular p-4 font-bold rounded-lg"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -324,65 +332,88 @@ const App = () => {
           </div>
           <div className="grid grid-cols-2 gap-4 text-center text-white reenie-beanie-regular mb-8 mx-4">
             <div className="show-date-item">
-              <h4 className="text-7xl font-bold">6/28</h4>
+              <h4 className="text-7xl font-bold">8/24</h4>
               <p className="text-4xl font-bold">
-                San Diego, CA &#x21DD; Che Cafe
+                Boyle Heights, Los Angeles, CA &#x21DD; RSVP Locations TBA
               </p>
+              <a
+                href="https://linktr.ee/Crossingisdottingts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+              >
+                Get Tickets
+              </a>
             </div>
             <div className="show-date-item">
-              <h4 className="text-7xl font-bold">6/29</h4>
+              <h4 className="text-7xl font-bold">9/5</h4>
               <p className="text-4xl font-bold">
-                Davenport, IA &#x21DD; Raccoon Motel
+                Ventura, CA &#x21DD; The Twist
               </p>
-            </div>
-            <div className="show-date-item ">
-              <h4 className="text-7xl font-bold">6/30</h4>
-              <p className="text-4xl font-bold">
-                Ferndale, MI &#x21DD; Pug Fest @ Second Base Pub Grub
-              </p>
-            </div>
-            <div className="show-date-item ">
-              <h4 className="text-7xl font-bold">7/1</h4>
-              <p className="text-4xl font-bold">
-                Akron, OH &#x21DD; It's a King Thing! (W/Antighost)
-              </p>
-            </div>
-            <div className="show-date-item ">
-              <h4 className="text-7xl font-bold">7/2</h4>
-              <p className="text-4xl font-bold">
-                Toldeo, OH &#x21DD; Ottowa Tavern (W/Antighost)
-              </p>
-            </div>
-            <div className="show-date-item ">
-              <h4 className="text-7xl font-bold">7/3</h4>
-              <p className="text-4xl font-bold">
-                Cincinnati, OH &#x21DD; Northside Tavern (W/Antighost)
-              </p>
+              <a
+                href="https://linktr.ee/Crossingisdottingts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+              >
+                Get Tickets
+              </a>
             </div>
             <div className="show-date-item">
-              <h4 className="text-7xl font-bold">7/4</h4>
+              <h4 className="text-7xl font-bold">10/17</h4>
               <p className="text-4xl font-bold">
-                Kansas City, MO &#x21DD; Howdy (w/Oolong & Newgrounds Death
-                Rugby)
+                San Jose, CA &#x21DD; Location TBA
               </p>
+              <a
+                href="https://linktr.ee/Crossingisdottingts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+              >
+                Get Tickets
+              </a>
             </div>
             <div className="show-date-item">
-              <h4 className="text-7xl font-bold">7/5</h4>
+              <h4 className="text-7xl font-bold">10/18</h4>
               <p className="text-4xl font-bold">
-                Lawrence, KS &#x21DD; Replay Lounge
+                Sacramento, CA &#x21DD; Old Ironsides
               </p>
+              <a
+                href="https://linktr.ee/Crossingisdottingts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+              >
+                Get Tickets
+              </a>
             </div>
-            <div className="show-date-item ">
-              <h4 className="text-7xl font-bold">7/6</h4>
+            <div className="show-date-item">
+              <h4 className="text-7xl font-bold">10/19</h4>
               <p className="text-4xl font-bold">
-                Lincoln, NE &#x21DD; First Day Vinyl
+                Lodi, CA &#x21DD; Wildwood Skateshop
               </p>
+              <a
+                href="https://linktr.ee/Crossingisdottingts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+              >
+                Get Tickets
+              </a>
             </div>
-            <div className="show-date-item ">
-              <h4 className="text-7xl font-bold">7/10</h4>
+            <div className="show-date-item">
+              <h4 className="text-7xl font-bold">10/20</h4>
               <p className="text-4xl font-bold">
-                Los Angeles, CA &#x21DD; Moroccan Lounge
+                Richmond, CA &#x21DD; Prop Shop (Twin Shrieks Fest)
               </p>
+              <a
+                href="https://linktr.ee/Crossingisdottingts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+              >
+                Get Tickets
+              </a>
             </div>
           </div>
         </section>
