@@ -330,7 +330,7 @@ const App = () => {
               upcoming Shows
             </h1>
           </div>
-          <div className="grid grid-cols-2 gap-4 text-center text-white reenie-beanie-regular mb-8 mx-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center text-white reenie-beanie-regular mb-8 mx-4">
             <div className="show-date-item">
               <h4 className="text-7xl font-bold">8/24</h4>
               <p className="text-4xl font-bold">
@@ -340,7 +340,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
               >
                 Get Tickets
               </a>
@@ -354,7 +354,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
               >
                 Get Tickets
               </a>
@@ -368,7 +368,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
               >
                 Get Tickets
               </a>
@@ -382,7 +382,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
               >
                 Get Tickets
               </a>
@@ -396,7 +396,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
               >
                 Get Tickets
               </a>
@@ -410,7 +410,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-white text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
               >
                 Get Tickets
               </a>
