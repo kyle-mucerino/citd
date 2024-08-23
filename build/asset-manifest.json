@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0dd53ffe.css",
-    "main.js": "/static/js/main.94227381.js",
+    "main.css": "/static/css/main.f3f6ec50.css",
+    "main.js": "/static/js/main.fd17d005.js",
     "static/media/poster1.jpeg": "/static/media/poster1.803d42d7c0b52430ead9.jpeg",
     "static/media/poster2.jpeg": "/static/media/poster2.c17f26d3e4f9c10566a5.jpeg",
     "static/media/poster5.jpeg": "/static/media/poster5.c3bb1844c6efceb7e122.jpeg",
@@ -13,15 +13,16 @@
     "static/media/spotify4.jpeg": "/static/media/spotify4.db5a8a686b336b022b09.jpeg",
     "static/media/yourstruly5.jpeg": "/static/media/yourstruly5.b4eb4f9d11e2e2e6c7aa.jpeg",
     "static/media/poster4.jpeg": "/static/media/poster4.55536ed43a47400b95e0.jpeg",
-    "static/media/band7.jpeg": "/static/media/band7.8a6bfc6c5bf56f4b09d5.jpeg",
+    "static/media/logo.jpeg": "/static/media/logo.bf225e0868d176d83e49.jpeg",
     "static/media/logo4.webp": "/static/media/logo4.a00f4390f1ca55ec68ee.webp",
     "static/media/logo3.webp": "/static/media/logo3.719a99f30ee8c715b706.webp",
+    "static/media/logo2.jpeg": "/static/media/logo2.5269fad0e038a897bf61.jpeg",
     "index.html": "/index.html",
-    "main.0dd53ffe.css.map": "/static/css/main.0dd53ffe.css.map",
-    "main.94227381.js.map": "/static/js/main.94227381.js.map"
+    "main.f3f6ec50.css.map": "/static/css/main.f3f6ec50.css.map",
+    "main.fd17d005.js.map": "/static/js/main.fd17d005.js.map"
   },
   "entrypoints": [
-    "static/css/main.0dd53ffe.css",
-    "static/js/main.94227381.js"
+    "static/css/main.f3f6ec50.css",
+    "static/js/main.fd17d005.js"
   ]
 }
