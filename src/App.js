@@ -24,13 +24,26 @@ const icons = [
 ];
 
 const bgImage1 = require("./assets/yourstruly5.jpeg");
+const bgImage2 = require("./assets/yourstruly1.jpg");
 const logo5 = require("./assets/logo.jpeg");
 const logo2 = require("./assets/logo2.jpeg");
 // const bgImage2 = require("./assets/band7.jpeg");
 
 const albumPosters = [
   {
+    src: require("./assets/yourstruly1.jpg"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
     src: require("./assets/poster1.jpeg"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/yourstruly2.jpg"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/yourstruly6.jpeg"),
     link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
   },
   {
@@ -150,22 +163,22 @@ const App = () => {
         </header>
         <section className="section-1 landing-page">
           <div className="flex flex-row h-screen">
-            <div className="w-full flex flex-col justify-center items-center">
+            <div className="w-full flex flex-col justify-evenly items-center">
+              <img
+                src={logoWhite}
+                alt="Crossing I's Dotting T's"
+                className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
+              ></img>
               <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
                 <a
                   href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
-                  className="text-2xl sm:text-7xl"
+                  className="text-3xl sm:text-7xl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   listen to the new album
                 </a>
               </button>
-              <img
-                src={logoWhite}
-                alt="Crossing I's Dotting T's"
-                className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
-              ></img>
               {/* <div className="text-5xl uppercase font-bold reenie-beanie-regular text-white rounded-lg mt-4">
                 <h2 className="p-2">Discover more...</h2>
               </div>
