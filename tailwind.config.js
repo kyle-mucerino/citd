@@ -13,6 +13,9 @@ module.exports = {
       },
       animation: {
         colorCycle: "colorCycle 2s infinite"
+      },
+      screens: {
+        custom: "1194px"
       }
     }
   },

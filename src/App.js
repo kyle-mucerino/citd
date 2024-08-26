@@ -95,27 +95,27 @@ const App = () => {
         bgImage={bgImage1}
         strength={200}
         bgImageStyle={{ objectFit: "cover" }}
-        className="bg1 hidden sm:block"
+        className="bg1 hidden custom:block"
       >
         <header className="grid grid-cols-12">
           <img
             src={logo}
             alt="Crossing I's Dotting T's"
-            className="col-start-1 col-end-6 ml-8 hidden sm:block"
+            className="col-start-1 col-end-6 ml-8 hidden custom:block"
           ></img>
-          <nav className="col-start-1 sm:col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly">
+          <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly">
             <a
               href="https://crossing-i-s-dotting-ts.myshopify.com/"
-              className="text-2xl sm:text-5xl"
+              className="text-2xl custom:text-5xl"
               target="_blank"
               rel="noopener noreferrer"
             >
               <h3>&rArr;merch</h3>
             </a>
-            <a href="#music" className="text-2xl sm:text-5xl">
+            <a href="#music" className="text-2xl custom:text-5xl">
               <h3>&rArr;music</h3>
             </a>
-            <a href="#shows" className="text-2xl sm:text-5xl">
+            <a href="#shows" className="text-2xl custom:text-5xl">
               <h3>&rArr;shows</h3>
             </a>
           </nav>
@@ -126,7 +126,7 @@ const App = () => {
               <button className="rounded-lg p-2 uppercase reenie-beanie-regular text-black font-bold animate-colorCycle">
                 <a
                   href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
-                  className="text-2xl sm:text-7xl"
+                  className="text-2xl custom:text-7xl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -136,55 +136,49 @@ const App = () => {
               <img
                 src={logoWhite}
                 alt="Crossing I's Dotting T's"
-                className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
+                className="custom:hidden w-2/3 bg-black rounded-lg mt-2"
               ></img>
             </div>
           </div>
         </section>
       </Parallax>
-      <div className="sm:hidden mobile-1">
+      <div className="custom:hidden mobile-1">
         <header className="grid grid-cols-12">
-          <nav className="col-start-1 sm:col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly text-white">
+          <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly text-white">
             <a
               href="https://crossing-i-s-dotting-ts.myshopify.com/"
-              className="text-3xl sm:text-5xl"
+              className="text-3xl custom:text-5xl"
               target="_blank"
               rel="noopener noreferrer"
             >
               <h3>&rArr;merch</h3>
             </a>
-            <a href="#music" className="text-3xl sm:text-5xl">
+            <a href="#music" className="text-3xl custom:text-5xl">
               <h3>&rArr;music</h3>
             </a>
-            <a href="#shows" className="text-3xl sm:text-5xl">
+            <a href="#shows" className="text-3xl custom:text-5xl">
               <h3>&rArr;shows</h3>
             </a>
           </nav>
         </header>
         <section className="section-1 landing-page">
-          <div className="flex flex-row h-screen">
+          <div className="flex flex-row">
             <div className="w-full flex flex-col justify-evenly items-center">
               <img
                 src={logoWhite}
                 alt="Crossing I's Dotting T's"
-                className="sm:hidden w-2/3 bg-black rounded-lg mt-2"
+                className="custom:hidden w-2/3 bg-black rounded-lg mt-2"
               ></img>
               <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
                 <a
                   href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
-                  className="text-3xl sm:text-7xl"
+                  className="text-3xl custom:text-7xl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   listen to the new album
                 </a>
               </button>
-              {/* <div className="text-5xl uppercase font-bold reenie-beanie-regular text-white rounded-lg mt-4">
-                <h2 className="p-2">Discover more...</h2>
-              </div>
-              <p>
-                <p className="text-9xl font-bold text-white">&darr;</p>
-              </p> */}
               <iframe
                 className="w-full aspect-video p-4"
                 src="https://www.youtube.com/embed/rvG0TKs1vu0"
@@ -201,7 +195,7 @@ const App = () => {
         // bgImage={bgImage2}
         strength={300}
         bgImageStyle={{ objectFit: "cover" }}
-        className="hidden sm:block"
+        className="hidden custom:block"
         style={{
           background: "linear-gradient(to bottom, #000428 , #004e92)"
         }}
@@ -210,7 +204,7 @@ const App = () => {
           <div className="flex flex-col p-4">
             <div className="flex flex-row">
               <iframe
-                className="w-full aspect-video p-2 hidden sm:block"
+                className="w-full aspect-video p-2 hidden custom:block"
                 src="https://www.youtube.com/embed/rvG0TKs1vu0"
                 title="YouTube video player"
                 frameBorder="0"
@@ -218,7 +212,7 @@ const App = () => {
                 allowFullScreen
               ></iframe>
 
-              <div className="w-2/3 flex-col hidden sm:block">
+              <div className="w-2/3 flex-col hidden custom:block">
                 <div>
                   <h1
                     className="text-7xl text-black font-bold reenie-beanie-regular p-2 rounded-lg text-center"
@@ -240,7 +234,7 @@ const App = () => {
               </div>
             </div>
             <div className="flex flex-row mt-12">
-              <div className="w-3/5 flex-col hidden sm:block text-center">
+              <div className="w-3/5 flex-col hidden custom:block text-center">
                 <h1
                   className="text-7xl text-black font-bold reenie-beanie-regular rounded-lg p-2"
                   style={{
@@ -258,7 +252,7 @@ const App = () => {
                 </div>
               </div>
               <iframe
-                className="w-full col-span-12 sm:col-start-7 col-end-13 aspect-video p-2"
+                className="w-full col-span-12 custom:col-start-7 col-end-13 aspect-video p-2"
                 src="https://www.youtube.com/embed/akLPERuJNV4"
                 title="YouTube video player"
                 frameBorder="0"
@@ -299,7 +293,7 @@ const App = () => {
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
-              className="text-2xl sm:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+              className="text-2xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -335,7 +329,7 @@ const App = () => {
         <section id="shows" className="shows section-4 border-b-4 border-white">
           <div className="flex justify-center mb-8">
             <h1
-              className="uppercase text-black text-4xl sm:text-7xl reenie-beanie-regular p-4 font-bold rounded-lg"
+              className="uppercase text-black text-4xl custom:text-7xl reenie-beanie-regular p-4 font-bold rounded-lg"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -343,7 +337,7 @@ const App = () => {
               upcoming Shows
             </h1>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center text-white reenie-beanie-regular mb-8 mx-4">
+          <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white reenie-beanie-regular mb-8 mx-4">
             <div className="show-date-item">
               <h4 className="text-7xl font-bold">8/24</h4>
               <p className="text-4xl font-bold">
@@ -442,7 +436,7 @@ const App = () => {
           <div className="flex flex-col justify-evenly">
             <div className="w-full flex flex-col justify-center items-center mt-4">
               <h2
-                className="text-3xl sm:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+                className="text-3xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
                 style={{
                   background: "linear-gradient(to left, #fe8c00,#f83600)"
                 }}
@@ -476,7 +470,7 @@ const App = () => {
       </Parallax>
       <footer className="bg-black border-t-4 border-white text-white py-6">
         <div className="text-center flex items-center justify-center space-x-2 mb-4">
-          <h2 className="text-4xl sm:text-6xl font-bold reenie-beanie-regular uppercase">
+          <h2 className="text-4xl custom:text-6xl font-bold reenie-beanie-regular uppercase">
             Connect with us
           </h2>
           <BsCaretRightFill className="text-4xl" />
