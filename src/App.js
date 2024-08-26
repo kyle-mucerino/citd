@@ -320,12 +320,12 @@ const App = () => {
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
-              className="text-2xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+              className="text-5xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg text-center"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
             >
-              find us on spotify & apple music
+              Find us on Spotify <br></br> & Apple Music
             </h2>
             <Carousel
               showThumbs={false}
@@ -390,7 +390,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl font-bold rounded hover:bg-yellow-500"
               >
                 Get Tickets
               </a>
@@ -404,7 +404,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl font-bold rounded hover:bg-yellow-500"
               >
                 Get Tickets
               </a>
@@ -418,7 +418,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl font-bold rounded hover:bg-yellow-500"
               >
                 Get Tickets
               </a>
@@ -432,7 +432,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl font-bold rounded hover:bg-yellow-500"
               >
                 Get Tickets
               </a>
@@ -446,7 +446,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl font-bold rounded hover:bg-yellow-500"
               >
                 Get Tickets
               </a>
@@ -460,7 +460,7 @@ const App = () => {
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-orange-600 text-black text-2xl font-bold rounded hover:bg-orange-500"
+                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl font-bold rounded hover:bg-yellow-500"
               >
                 Get Tickets
               </a>
@@ -544,14 +544,14 @@ const App = () => {
                 autoplay
                 centerSlidePercentage={70}
                 className="carousel-size-1 sm:hidden"
-                >
+              >
                 {albumPosters.map((poster, index) => (
                   <div key={index} className="carousel-item-size">
                     <a
                       href={poster.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      >
+                    >
                       <img src={poster.src} alt={`Album Poster ${index + 1}`} />
                     </a>
                   </div>

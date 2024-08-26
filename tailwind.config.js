@@ -16,7 +16,8 @@ module.exports = {
       },
       screens: {
         custom: "1194px",
-        tiny: "490px"
+        tiny: "490px",
+        smallish: "530px"
       }
     }
   },
