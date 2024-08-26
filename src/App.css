@@ -6,9 +6,14 @@ body {
   background: black;
 }
 
-.carousel-size {
+.carousel-size-1 {
   margin: 0 auto; /* Center the carousel */
   padding: 2rem;
+}
+
+.carousel-size {
+  margin: 0 auto; /* Center the carousel */
+  padding: 0.1rem;
 }
 
 .mobile-1 {

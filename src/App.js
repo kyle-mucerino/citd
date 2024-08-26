@@ -31,19 +31,7 @@ const logo2 = require("./assets/logo2.jpeg");
 
 const albumPosters = [
   {
-    src: require("./assets/yourstruly1.jpg"),
-    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
-  },
-  {
     src: require("./assets/poster1.jpeg"),
-    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
-  },
-  {
-    src: require("./assets/yourstruly2.jpg"),
-    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
-  },
-  {
-    src: require("./assets/yourstruly6.jpeg"),
     link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
   },
   {
@@ -61,7 +49,46 @@ const albumPosters = [
   {
     src: require("./assets/poster5.jpeg"),
     link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
-  }
+  },
+];
+
+const liveShows = [
+  {
+    src: require("./assets/yourstruly1.jpg"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/magPic.png"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/yourstruly2.jpg"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/yourstruly6.jpeg"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/LivePic1.jpeg"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/live5.webp"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/Live3.png"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/live4.jpeg"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
+  {
+    src: require("./assets/shirtlessYankee.png"),
+    link: "https://open.spotify.com/playlist/37i9dQZF1E4xJUlko28aAF"
+  },
 ];
 
 const merchandise = [
@@ -169,7 +196,7 @@ const App = () => {
                 alt="Crossing I's Dotting T's"
                 className="custom:hidden w-2/3 bg-black rounded-lg mt-2"
               ></img>
-              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
+              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle mt-2">
                 <a
                   href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
                   className="text-3xl custom:text-7xl"
@@ -293,7 +320,7 @@ const App = () => {
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
-              className="text-2xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+              className="text-4xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -306,7 +333,7 @@ const App = () => {
               useKeyboardArrows
               centerMode={true}
               centerSlidePercentage={50}
-              className="carousel-size"
+              className="carousel-size-1"
             >
               {merchandise.map((item, index) => (
                 <div key={index} className="carousel-item-size">
@@ -329,7 +356,7 @@ const App = () => {
         <section id="shows" className="shows section-4 border-b-4 border-white">
           <div className="flex justify-center mb-8">
             <h1
-              className="uppercase text-black text-4xl custom:text-7xl reenie-beanie-regular p-4 font-bold rounded-lg"
+              className="uppercase text-black text-5xl custom:text-7xl reenie-beanie-regular p-4 font-bold rounded-lg"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -434,9 +461,9 @@ const App = () => {
       >
         <section id="merch" className="section-5 archives">
           <div className="flex flex-col justify-evenly">
-            <div className="w-full flex flex-col justify-center items-center mt-4">
+            <div className="w-full flex flex-col justify-center items-center mt-8">
               <h2
-                className="text-3xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+                className="text-5xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
                 style={{
                   background: "linear-gradient(to left, #fe8c00,#f83600)"
                 }}
@@ -449,8 +476,35 @@ const App = () => {
                 useKeyboardArrows
                 centerMode={true}
                 autoplay
-                centerSlidePercentage={40}
+                centerSlidePercentage={50}
                 className="carousel-size"
+              >
+                {liveShows.map((poster, index) => (
+                  <div key={index} className="carousel-item-size">
+                    <a
+                      href={poster.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={poster.src} alt={`Album Poster ${index + 1}`} />
+                    </a>
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+          </div>
+        </section>
+        <section id="merch" className="section-5 archives">
+          <div className="flex flex-col justify-evenly">
+            <div className="w-full flex flex-col justify-center items-center mt-4">
+              <Carousel
+                showThumbs={false}
+                showStatus={false}
+                useKeyboardArrows
+                centerMode={true}
+                autoplay
+                centerSlidePercentage={40}
+                className="carousel-size-1"
               >
                 {albumPosters.map((poster, index) => (
                   <div key={index} className="carousel-item-size">
