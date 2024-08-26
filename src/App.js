@@ -492,8 +492,8 @@ const App = () => {
                 useKeyboardArrows
                 centerMode={true}
                 autoplay
-                centerSlidePercentage={50}
-                className="carousel-size"
+                centerSlidePercentage={70}
+                className="carousel-size w-screen"
               >
                 {liveShows.map((poster, index) => (
                   <div key={index} className="carousel-item-size">
@@ -534,6 +534,8 @@ const App = () => {
                   </div>
                 ))}
               </Carousel>
+            </div>
+            <div className="w-full flex flex-col justify-center items-center mt-4">
               <Carousel
                 showThumbs={false}
                 showStatus={false}
@@ -542,14 +544,14 @@ const App = () => {
                 autoplay
                 centerSlidePercentage={70}
                 className="carousel-size-1 sm:hidden"
-              >
+                >
                 {albumPosters.map((poster, index) => (
                   <div key={index} className="carousel-item-size">
                     <a
                       href={poster.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                    >
+                      >
                       <img src={poster.src} alt={`Album Poster ${index + 1}`} />
                     </a>
                   </div>
