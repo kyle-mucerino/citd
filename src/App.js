@@ -492,7 +492,7 @@ const App = () => {
                 useKeyboardArrows
                 centerMode={true}
                 autoplay
-                centerSlidePercentage={70}
+                centerSlidePercentage={100}
                 className="carousel-size w-screen"
               >
                 {liveShows.map((poster, index) => (
