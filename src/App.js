@@ -320,7 +320,7 @@ const App = () => {
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
-              className="text-4xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
+              className="text-2xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -333,7 +333,23 @@ const App = () => {
               useKeyboardArrows
               centerMode={true}
               centerSlidePercentage={50}
-              className="carousel-size-1"
+              className="carousel-size-1 hidden sm:block"
+            >
+              {merchandise.map((item, index) => (
+                <div key={index} className="carousel-item-size">
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <img src={item.src} alt={`Merchandise ${index + 1}`} />
+                  </a>
+                </div>
+              ))}
+            </Carousel>
+            <Carousel
+              showThumbs={false}
+              showStatus={false}
+              useKeyboardArrows
+              centerMode={true}
+              centerSlidePercentage={70}
+              className="carousel-size-1 sm:hidden"
             >
               {merchandise.map((item, index) => (
                 <div key={index} className="carousel-item-size">
@@ -504,7 +520,28 @@ const App = () => {
                 centerMode={true}
                 autoplay
                 centerSlidePercentage={40}
-                className="carousel-size-1"
+                className="carousel-size-1 hidden sm:block"
+              >
+                {albumPosters.map((poster, index) => (
+                  <div key={index} className="carousel-item-size">
+                    <a
+                      href={poster.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={poster.src} alt={`Album Poster ${index + 1}`} />
+                    </a>
+                  </div>
+                ))}
+              </Carousel>
+              <Carousel
+                showThumbs={false}
+                showStatus={false}
+                useKeyboardArrows
+                centerMode={true}
+                autoplay
+                centerSlidePercentage={70}
+                className="carousel-size-1 sm:hidden"
               >
                 {albumPosters.map((poster, index) => (
                   <div key={index} className="carousel-item-size">
