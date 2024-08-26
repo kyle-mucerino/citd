@@ -15,7 +15,8 @@ module.exports = {
         colorCycle: "colorCycle 2s infinite"
       },
       screens: {
-        custom: "1194px"
+        custom: "1194px",
+        tiny: "490px"
       }
     }
   },

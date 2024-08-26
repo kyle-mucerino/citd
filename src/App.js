@@ -190,13 +190,13 @@ const App = () => {
         </header>
         <section className="section-1 landing-page">
           <div className="flex flex-row">
-            <div className="w-full flex flex-col justify-evenly items-center">
+            <div className="w-full flex flex-col justify-evenly items-center h-screen sm:h-auto">
               <img
                 src={logoWhite}
                 alt="Crossing I's Dotting T's"
                 className="custom:hidden w-2/3 bg-black rounded-lg mt-2"
               ></img>
-              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle mt-2">
+              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
                 <a
                   href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
                   className="text-3xl custom:text-7xl"
