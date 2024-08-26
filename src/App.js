@@ -320,7 +320,7 @@ const App = () => {
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
-              className="text-5xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg text-center"
+              className="tiny:text-5xl text-4xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg text-center"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
