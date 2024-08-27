@@ -18,7 +18,8 @@ module.exports = {
         custom: "1194px",
         tiny: "490px",
         smallish: "530px",
-        mobile1: "556px"
+        mobile1: "556px",
+        teenie: "375px"
       }
     }
   },

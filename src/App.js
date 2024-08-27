@@ -27,6 +27,7 @@ const bgImage1 = require("./assets/yourstruly5.jpeg");
 const bgImage2 = require("./assets/yourstruly1.jpg");
 const logo5 = require("./assets/logo.jpeg");
 const logo2 = require("./assets/logo2.jpeg");
+const logo2black = require("./assets/logo2black.jpeg");
 // const bgImage2 = require("./assets/band7.jpeg");
 
 const albumPosters = [
@@ -190,16 +191,16 @@ const App = () => {
         </header>
         <section className="section-1 landing-page">
           <div className="flex flex-row">
-            <div className="w-full flex flex-col justify-end mobile1:justify-evenly items-center h-screen sm:h-auto">
+            <div className="w-full flex flex-col justify-end teenie:justify-center items-center h-screen sm:h-auto">
               <img
                 src={logoWhite}
                 alt="Crossing I's Dotting T's"
                 className="custom:hidden w-2/3 bg-black rounded-lg"
               ></img>
-              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
+              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle mt-2">
                 <a
                   href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
-                  className="text-3xl custom:text-7xl mt-2"
+                  className="text-3xl custom:text-7xl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -214,6 +215,7 @@ const App = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
+              <img src={logo2black} alt="logo 2" className="h-1/6 mobile1:hidden"></img>
             </div>
           </div>
         </section>

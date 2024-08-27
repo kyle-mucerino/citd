@@ -17,15 +17,18 @@ body {
 }
 
 .mobile-1 {
-  background: linear-gradient(to bottom, #000428 , #004e92);
-  
-  @media screen and (max-width:556px) {
+  background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+@media screen and (max-width: 556px) {
+  .mobile-1 {
     background-image: url('./assets/yourstruly9.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
-    
   }
 }
+
+
 
 .mobile-2 {
   background: linear-gradient(to bottom, #000428 , #004e92);
