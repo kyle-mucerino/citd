@@ -191,7 +191,7 @@ const App = () => {
         </header>
         <section className="section-1 landing-page">
           <div className="flex flex-row">
-            <div className="w-full flex flex-col justify-end teenie:justify-center items-center h-screen sm:h-auto">
+            <div className="w-full flex flex-col justify-end  items-center h-screen sm:h-auto">
               <img
                 src={logoWhite}
                 alt="Crossing I's Dotting T's"
