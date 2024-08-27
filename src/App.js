@@ -27,7 +27,7 @@ const bgImage1 = require("./assets/yourstruly5.jpeg");
 const bgImage2 = require("./assets/yourstruly1.jpg");
 const logo5 = require("./assets/logo.jpeg");
 const logo2 = require("./assets/logo2.jpeg");
-const logo2black = require("./assets/logo2black.jpeg");
+const logo2blue = require("./assets/logo2blue.png");
 // const bgImage2 = require("./assets/band7.jpeg");
 
 const albumPosters = [
@@ -215,7 +215,11 @@ const App = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              <img src={logo2black} alt="logo 2" className="h-1/6 mobile1:hidden"></img>
+              <img
+                src={logo2blue}
+                alt="logo 2"
+                className="h-1/5 mobile1:hidden"
+              ></img>
             </div>
           </div>
         </section>

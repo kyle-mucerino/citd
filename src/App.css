@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 body {
-  background: black;
+  background: #004e92;
 }
 
 .carousel-size-1 {
