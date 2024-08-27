@@ -171,7 +171,7 @@ const App = () => {
       </Parallax>
       <div className="custom:hidden mobile-1">
         <header className="grid grid-cols-12">
-          <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly text-white">
+          <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold reenie-beanie-regular flex justify-evenly text-black mobile1:text-white">
             <a
               href="https://crossing-i-s-dotting-ts.myshopify.com/"
               className="text-3xl custom:text-5xl"
@@ -190,16 +190,16 @@ const App = () => {
         </header>
         <section className="section-1 landing-page">
           <div className="flex flex-row">
-            <div className="w-full flex flex-col justify-evenly items-center h-screen sm:h-auto">
+            <div className="w-full flex flex-col justify-end mobile1:justify-evenly items-center h-screen sm:h-auto">
               <img
                 src={logoWhite}
                 alt="Crossing I's Dotting T's"
-                className="custom:hidden w-2/3 bg-black rounded-lg mt-2"
+                className="custom:hidden w-2/3 bg-black rounded-lg"
               ></img>
               <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle">
                 <a
                   href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
-                  className="text-3xl custom:text-7xl"
+                  className="text-3xl custom:text-7xl mt-2"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -207,7 +207,7 @@ const App = () => {
                 </a>
               </button>
               <iframe
-                className="w-full aspect-video p-4"
+                className="w-full aspect-video p-2"
                 src="https://www.youtube.com/embed/rvG0TKs1vu0"
                 title="YouTube video player"
                 frameBorder="0"
