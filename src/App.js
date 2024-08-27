@@ -333,7 +333,7 @@ const App = () => {
               useKeyboardArrows
               centerMode={true}
               centerSlidePercentage={50}
-              className="carousel-size-1 hidden sm:block"
+              className="carousel-size-1 hidden sm:block w-screen"
             >
               {merchandise.map((item, index) => (
                 <div key={index} className="carousel-item-size">
@@ -348,8 +348,8 @@ const App = () => {
               showStatus={false}
               useKeyboardArrows
               centerMode={true}
-              centerSlidePercentage={70}
-              className="carousel-size-1 sm:hidden"
+              centerSlidePercentage={100}
+              className="carousel-size-1 sm:hidden w-screen"
             >
               {merchandise.map((item, index) => (
                 <div key={index} className="carousel-item-size">
@@ -492,8 +492,29 @@ const App = () => {
                 useKeyboardArrows
                 centerMode={true}
                 autoplay
+                centerSlidePercentage={70}
+                className="carousel-size w-screen hidden sm:block"
+              >
+                {liveShows.map((poster, index) => (
+                  <div key={index} className="carousel-item-size">
+                    <a
+                      href={poster.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={poster.src} alt={`Album Poster ${index + 1}`} />
+                    </a>
+                  </div>
+                ))}
+              </Carousel>
+              <Carousel
+                showThumbs={false}
+                showStatus={false}
+                useKeyboardArrows
+                centerMode={true}
+                autoplay
                 centerSlidePercentage={100}
-                className="carousel-size w-screen"
+                className="carousel-size w-screen sm:hidden"
               >
                 {liveShows.map((poster, index) => (
                   <div key={index} className="carousel-item-size">
@@ -520,7 +541,7 @@ const App = () => {
                 centerMode={true}
                 autoplay
                 centerSlidePercentage={40}
-                className="carousel-size-1 hidden sm:block"
+                className="carousel-size-1 hidden sm:block w-screen"
               >
                 {albumPosters.map((poster, index) => (
                   <div key={index} className="carousel-item-size">
@@ -542,8 +563,8 @@ const App = () => {
                 useKeyboardArrows
                 centerMode={true}
                 autoplay
-                centerSlidePercentage={70}
-                className="carousel-size-1 sm:hidden"
+                centerSlidePercentage={100}
+                className="carousel-size-1 sm:hidden w-screen"
               >
                 {albumPosters.map((poster, index) => (
                   <div key={index} className="carousel-item-size">
