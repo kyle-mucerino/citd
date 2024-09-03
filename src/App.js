@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Parallax } from "react-parallax";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -116,7 +116,32 @@ const merchandise = [
 ];
 
 
+
 const App = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ email })
+      });
+      const data = await response.json();
+      if (data.success) {
+        setMessage("Thank you for subscribing!");
+      } else {
+        setMessage("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setMessage("An error occurred. Please try again later.");
+    }
+    setEmail("");
+  };
   return (
     <article className="">
       <Parallax
@@ -607,6 +632,29 @@ const App = () => {
               <item.icon />
             </a>
           ))}
+        </div>
+        {/* Newsletter Subscription Section */}
+        <div className="mt-8 text-center">
+          <h3 className="text-3xl custom:text-5xl font-bold uppercase mb-4">
+            Subscribe to our newsletter
+          </h3>
+          <form onSubmit={handleSubmit} className="flex justify-center">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              required
+              className="p-2 text-black rounded-l-lg"
+            />
+            <button
+              type="submit"
+              className="p-2 bg-orange-500 text-white rounded-r-lg"
+            >
+              Subscribe
+            </button>
+          </form>
+          {message && <p className="mt-4">{message}</p>}
         </div>
       </footer>
     </article>
