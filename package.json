@@ -23,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server/src/index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "heroku-postbuild": "npm run build",
     "dev": "concurrently \"cd server && npm run dev\" \"npm start\""
@@ -46,5 +46,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5001"
+  "proxy": "http://localhost:5001",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }

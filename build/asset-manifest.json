@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7d731819.css",
-    "main.js": "/static/js/main.9ac3871c.js",
+    "main.css": "/static/css/main.cf71f4d8.css",
+    "main.js": "/static/js/main.8f8c24be.js",
     "static/media/yourstruly1.jpg": "/static/media/yourstruly1.9221764eaa9b20f93b0a.jpg",
     "static/media/yourstruly2.jpg": "/static/media/yourstruly2.4194115bd43146a9b668.jpg",
     "static/media/poster1.jpeg": "/static/media/poster1.803d42d7c0b52430ead9.jpeg",
@@ -24,15 +24,16 @@
     "static/media/live5.webp": "/static/media/live5.c07ce8b6e148fc4ca220.webp",
     "static/media/magPic.png": "/static/media/magPic.e339045456e2f053837c.png",
     "static/media/logo.jpeg": "/static/media/logo.bf225e0868d176d83e49.jpeg",
+    "static/media/logo2blue.png": "/static/media/logo2blue.5181195302ef648bbdd3.png",
     "static/media/logo4.webp": "/static/media/logo4.a00f4390f1ca55ec68ee.webp",
     "static/media/logo3.webp": "/static/media/logo3.719a99f30ee8c715b706.webp",
     "static/media/logo2.jpeg": "/static/media/logo2.5269fad0e038a897bf61.jpeg",
     "index.html": "/index.html",
-    "main.7d731819.css.map": "/static/css/main.7d731819.css.map",
-    "main.9ac3871c.js.map": "/static/js/main.9ac3871c.js.map"
+    "main.cf71f4d8.css.map": "/static/css/main.cf71f4d8.css.map",
+    "main.8f8c24be.js.map": "/static/js/main.8f8c24be.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d731819.css",
-    "static/js/main.9ac3871c.js"
+    "static/css/main.cf71f4d8.css",
+    "static/js/main.8f8c24be.js"
   ]
 }
