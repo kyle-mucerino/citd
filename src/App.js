@@ -131,17 +131,22 @@ const App = () => {
         },
         body: JSON.stringify({ email })
       });
+
       const data = await response.json();
-      if (data.success) {
+      console.log("Response Data:", data); // Debugging line to check what you get
+
+      if (response.ok && data.msg === "Successfully subscribed!") {
         setMessage("Thank you for subscribing!");
       } else {
         setMessage("Something went wrong. Please try again.");
       }
     } catch (error) {
+      console.error("Fetch error:", error); // Debugging line
       setMessage("An error occurred. Please try again later.");
     }
     setEmail("");
   };
+
   return (
     <article className="">
       <Parallax
@@ -176,16 +181,33 @@ const App = () => {
         <section className="section-1 landing-page">
           <div className="flex flex-row h-screen">
             <div className="w-full flex flex-col justify-center items-center">
-              <button className="rounded-lg p-2 uppercase reenie-beanie-regular text-black font-bold animate-colorCycle">
-                <a
-                  href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
-                  className="text-2xl custom:text-7xl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  listen to the new album
-                </a>
-              </button>
+              {/* Newsletter Subscription Section */}
+              <div className="text-center">
+                <h3 className="text-2xl custom:text-6xl p-2 font-bold uppercase mb-4 reenie-beanie-regular animate-colorCycle rounded-lg">
+                  Subscribe to our newsletter
+                </h3>
+                <form onSubmit={handleSubmit} className="flex justify-center">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    required
+                    className="p-2 text-black rounded-l-lg text-2xl custom:text-4xl reenie-beanie-regular"
+                  />
+                  <button
+                    type="submit"
+                    className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl reenie-beanie-regular"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+                {message && (
+                  <p className="mt-4 text-white text-xl uppercase bg-orange-600 rounded-lg w-1/2 mx-auto">
+                    {message}
+                  </p>
+                )}
+              </div>
               <img
                 src={logoWhite}
                 alt="Crossing I's Dotting T's"
@@ -222,16 +244,33 @@ const App = () => {
                 alt="Crossing I's Dotting T's"
                 className="custom:hidden w-2/3 bg-black rounded-lg"
               ></img>
-              <button className="rounded-lg p-2 uppercase reenie-beanie-regular font-bold animate-colorCycle mt-2">
-                <a
-                  href="https://open.spotify.com/artist/7eNA56CKDh8uHvdk3Dsdbc"
-                  className="text-3xl custom:text-7xl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  listen to the new album
-                </a>
-              </button>
+              {/* Newsletter Subscription Section */}
+              <div className="text-center">
+                <h3 className="text-2xl custom:text-6xl p-2 font-bold uppercase mb-4 reenie-beanie-regular animate-colorCycle rounded-lg hidden">
+                  Subscribe to our newsletter
+                </h3>
+                <form onSubmit={handleSubmit} className="flex justify-center mt-2">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    required
+                    className="p-2 text-black rounded-l-lg text-2xl custom:text-4xl reenie-beanie-regular"
+                  />
+                  <button
+                    type="submit"
+                    className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl reenie-beanie-regular"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+                {message && (
+                  <p className="mt-4 text-white text-xl uppercase bg-orange-600 rounded-lg w-1/2 mx-auto">
+                    {message}
+                  </p>
+                )}
+              </div>
               <iframe
                 className="w-full aspect-video p-2"
                 src="https://www.youtube.com/embed/rvG0TKs1vu0"
@@ -632,29 +671,6 @@ const App = () => {
               <item.icon />
             </a>
           ))}
-        </div>
-        {/* Newsletter Subscription Section */}
-        <div className="mt-8 text-center">
-          <h3 className="text-3xl custom:text-5xl font-bold uppercase mb-4">
-            Subscribe to our newsletter
-          </h3>
-          <form onSubmit={handleSubmit} className="flex justify-center">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              required
-              className="p-2 text-black rounded-l-lg"
-            />
-            <button
-              type="submit"
-              className="p-2 bg-orange-500 text-white rounded-r-lg"
-            >
-              Subscribe
-            </button>
-          </form>
-          {message && <p className="mt-4">{message}</p>}
         </div>
       </footer>
     </article>
