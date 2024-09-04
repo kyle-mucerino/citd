@@ -23,7 +23,8 @@ exports.subscribeUser = async (req, res) => {
     await subscription.save();
     res.json({ msg: "Successfully subscribed!" });
   } catch (err) {
-    console.error(err.message);
-    res.status(500).send("Server error");
+      console.error("Subscription error:", err);
+      res.status(500).json({ msg: "Server error", error: err.message });
   }
+
 };
