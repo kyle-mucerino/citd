@@ -266,7 +266,7 @@ const App = () => {
                   </button>
                 </form>
                 {message && (
-                  <p className="mt-4 text-white text-xl uppercase bg-orange-600 rounded-lg w-1/2 mx-auto">
+                  <p className="mt-4 text-white text-xl uppercase bg-orange-600 rounded-lg w-full custom:w-1/2 mx-auto">
                     {message}
                   </p>
                 )}
