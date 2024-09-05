@@ -24,10 +24,9 @@ const icons = [
 ];
 
 const bgImage1 = require("./assets/yourstruly5.jpeg");
-const bgImage2 = require("./assets/yourstruly1.jpg");
 const logo5 = require("./assets/logo.jpeg");
 const logo2 = require("./assets/logo2.jpeg");
-const logo2blue = require("./assets/logo2blue.png");
+const logo2black = require("./assets/logo2black.jpeg");
 // const bgImage2 = require("./assets/band7.jpeg");
 
 const albumPosters = [
@@ -249,7 +248,10 @@ const App = () => {
                 <h3 className="text-2xl custom:text-6xl p-2 font-bold uppercase mb-4 reenie-beanie-regular animate-colorCycle rounded-lg hidden">
                   Subscribe to our newsletter
                 </h3>
-                <form onSubmit={handleSubmit} className="flex justify-center mt-2">
+                <form
+                  onSubmit={handleSubmit}
+                  className="flex justify-center mt-2"
+                >
                   <input
                     type="email"
                     value={email}
@@ -280,7 +282,7 @@ const App = () => {
                 allowFullScreen
               ></iframe>
               <img
-                src={logo2blue}
+                src={logo2black}
                 alt="logo 2"
                 className="h-1/5 mobile1:hidden"
               ></img>
@@ -294,7 +296,7 @@ const App = () => {
         bgImageStyle={{ objectFit: "cover" }}
         className="hidden custom:block"
         style={{
-          background: "linear-gradient(to bottom, #000428 , #004e92)"
+          background: "linear-gradient(to top, #000000, #434343)"
         }}
       >
         <section id="videos" className="section-2 videos">
@@ -302,7 +304,7 @@ const App = () => {
             <div className="flex flex-row">
               <iframe
                 className="w-full aspect-video p-2 hidden custom:block"
-                src="https://www.youtube.com/embed/rvG0TKs1vu0"
+                src="https://www.youtube.com/embed/quGjvowgqaI"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -333,12 +335,12 @@ const App = () => {
             <div className="flex flex-row mt-12">
               <div className="w-3/5 flex-col hidden custom:block text-center">
                 <h1
-                  className="text-7xl text-black font-bold reenie-beanie-regular rounded-lg p-2"
+                  className="text-6xl text-black font-bold reenie-beanie-regular rounded-lg p-2"
                   style={{
                     background: "linear-gradient(to left, #fe8c00,#f83600)"
                   }}
                 >
-                  Latest Single &#9834; &#8594;
+                  Far Away Music Video&#8594;
                 </h1>
                 <div>
                   <img
@@ -350,7 +352,7 @@ const App = () => {
               </div>
               <iframe
                 className="w-full col-span-12 custom:col-start-7 col-end-13 aspect-video p-2"
-                src="https://www.youtube.com/embed/akLPERuJNV4"
+                src="https://www.youtube.com/embed/rvG0TKs1vu0"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -360,31 +362,11 @@ const App = () => {
           </div>
         </section>
       </Parallax>
-      {/* <section id="videos" className="mobile-2 sm:hidden">
-        <div className="flex flex-col p-4 h-screen justify-evenly">
-          <iframe
-            className="w-full aspect-video p-2"
-            src="https://www.youtube.com/embed/rvG0TKs1vu0"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          <iframe
-            className="w-full aspect-video p-2"
-            src="https://www.youtube.com/embed/akLPERuJNV4"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </section> */}
       <Parallax
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
         style={{
-          background: "linear-gradient(to top, #000428 , #004e92)"
+          background: "linear-gradient(to bottom, #000000, #434343)"
         }}
       >
         <section id="music" className="section-3 music my-12">
@@ -436,7 +418,7 @@ const App = () => {
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
         style={{
-          background: "linear-gradient(to bottom, #000428 , #004e92)"
+          background: "linear-gradient(to top, #000000, #434343)"
         }}
       >
         <section id="shows" className="shows section-4 border-b-4 border-white">
@@ -542,7 +524,7 @@ const App = () => {
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
         style={{
-          background: "linear-gradient(to top, #000428 , #004e92)"
+          background: "linear-gradient(to bottom, #000000, #434343)"
         }}
       >
         <section id="merch" className="section-5 archives">
@@ -652,7 +634,7 @@ const App = () => {
           </div>
         </section>
       </Parallax>
-      <footer className="bg-black border-t-4 border-white text-white py-6">
+      <footer className="footer border-t-4 border-white text-white py-6">
         <div className="text-center flex items-center justify-center space-x-2 mb-4">
           <h2 className="text-4xl custom:text-6xl font-bold reenie-beanie-regular uppercase">
             Connect with us
