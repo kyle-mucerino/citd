@@ -372,7 +372,7 @@ const App = () => {
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
-              className="tiny:text-5xl text-4xl custom:text-7xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg text-center"
+              className="tiny:text-5xl text-4xl custom:text-5xl uppercase font-bold p-4 reenie-beanie-regular text-black rounded-lg text-center"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -380,11 +380,12 @@ const App = () => {
               Find us on Spotify <br></br> & Apple Music
             </h2>
             <Carousel
+              selectedItem={2}
               showThumbs={false}
               showStatus={false}
               useKeyboardArrows
               centerMode={true}
-              centerSlidePercentage={50}
+              centerSlidePercentage={25}
               className="carousel-size-1 hidden sm:block w-screen"
             >
               {merchandise.map((item, index) => (
@@ -539,12 +540,13 @@ const App = () => {
                 Archives
               </h2>
               <Carousel
+                selectedItem={1}
                 showThumbs={false}
                 showStatus={false}
                 useKeyboardArrows
                 centerMode={true}
                 autoplay
-                centerSlidePercentage={70}
+                centerSlidePercentage={50}
                 className="carousel-size w-screen hidden sm:block"
               >
                 {liveShows.map((poster, index) => (
@@ -587,6 +589,7 @@ const App = () => {
           <div className="flex flex-col justify-evenly">
             <div className="w-full flex flex-col justify-center items-center mt-4">
               <Carousel
+                selectedItem={1}
                 showThumbs={false}
                 showStatus={false}
                 useKeyboardArrows
