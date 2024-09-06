@@ -275,7 +275,7 @@ const App = () => {
               </div>
               <iframe
                 className="w-full aspect-video p-2"
-                src="https://www.youtube.com/embed/rvG0TKs1vu0"
+                src="https://www.youtube.com/embed/quGjvowgqaI"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
