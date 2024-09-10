@@ -221,16 +221,16 @@ const App = () => {
           <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold aboreto-regular flex justify-evenly text-black mobile1:text-white">
             <a
               href="https://crossing-i-s-dotting-ts.myshopify.com/"
-              className="text-3xl custom:text-5xl"
+              className="text-2xl custom:text-4xl"
               target="_blank"
               rel="noopener noreferrer"
             >
               <h3>&rArr;merch</h3>
             </a>
-            <a href="#music" className="text-3xl custom:text-5xl">
+            <a href="#music" className="text-2xl custom:text-4xl">
               <h3>&rArr;music</h3>
             </a>
-            <a href="#shows" className="text-3xl custom:text-5xl">
+            <a href="#shows" className="text-2xl custom:text-4xl">
               <h3>&rArr;shows</h3>
             </a>
           </nav>
