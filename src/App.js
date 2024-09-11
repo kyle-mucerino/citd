@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BsCaretRightFill } from "react-icons/bs";
-import logo from "./assets/logo4.webp";
+import logo from "./assets/logo3.webp";
 import logoWhite from "./assets/logo3.webp";
 
 const icons = [
@@ -23,7 +23,7 @@ const icons = [
   }
 ];
 
-const bgImage1 = require("./assets/yourstruly5.jpeg");
+const bgImage1 = require("./assets/yourstruly1.jpg");
 const logo5 = require("./assets/logo.jpeg");
 const logo2 = require("./assets/logo2.jpeg");
 const logo2black = require("./assets/logo2black.jpeg");
@@ -160,7 +160,7 @@ const App = () => {
             alt="Crossing I's Dotting T's"
             className="col-start-1 col-end-6 ml-8 hidden custom:block"
           ></img>
-          <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold aboreto-regular flex justify-evenly">
+          <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold poppins-semibold flex justify-evenly text-white">
             <a
               href="https://crossing-i-s-dotting-ts.myshopify.com/"
               className="text-2xl custom:text-4xl"
@@ -182,7 +182,7 @@ const App = () => {
             <div className="w-full flex flex-col justify-center items-center">
               {/* Newsletter Subscription Section */}
               <div className="text-center">
-                <h3 className="text-2xl custom:text-6xl p-2 font-bold uppercase mb-4 aboreto-regular animate-colorCycle rounded-lg">
+                <h3 className="text-2xl custom:text-6xl p-2 font-bold uppercase mb-4 poppins-semibold animate-colorCycle rounded-lg">
                   Subscribe to our newsletter
                 </h3>
                 <form onSubmit={handleSubmit} className="flex justify-center">
@@ -192,11 +192,11 @@ const App = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
                     required
-                    className="p-2 text-black rounded-l-lg text-2xl custom:text-4xl aboreto-regular"
+                    className="p-2 text-black rounded-l-lg text-2xl custom:text-4xl poppins-semibold"
                   />
                   <button
                     type="submit"
-                    className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl aboreto-regular"
+                    className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl poppins-semibold"
                   >
                     Subscribe
                   </button>
@@ -218,7 +218,7 @@ const App = () => {
       </Parallax>
       <div className="custom:hidden mobile-1">
         <header className="grid grid-cols-12">
-          <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold aboreto-regular flex justify-evenly text-black mobile1:text-white">
+          <nav className="col-start-1 custom:col-start-8 col-end-13 uppercase font-bold poppins-semibold flex justify-evenly text-white mobile1:text-white">
             <a
               href="https://crossing-i-s-dotting-ts.myshopify.com/"
               className="text-2xl custom:text-4xl"
@@ -245,7 +245,7 @@ const App = () => {
               ></img>
               {/* Newsletter Subscription Section */}
               <div className="text-center">
-                <h3 className="text-2xl custom:text-6xl p-2 font-bold uppercase mb-4 aboreto-regular animate-colorCycle rounded-lg hidden">
+                <h3 className="text-2xl custom:text-6xl p-2 font-bold uppercase mb-4 poppins-semibold animate-colorCycle rounded-lg hidden">
                   Subscribe to our newsletter
                 </h3>
                 <form
@@ -258,11 +258,11 @@ const App = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
                     required
-                    className="p-2 text-black rounded-l-lg text-xl custom:text-4xl aboreto-regular"
+                    className="p-2 text-black rounded-l-lg text-xl custom:text-4xl poppins-semibold"
                   />
                   <button
                     type="submit"
-                    className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl aboreto-regular"
+                    className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl poppins-semibold"
                   >
                     Subscribe
                   </button>
@@ -314,7 +314,7 @@ const App = () => {
               <div className="w-2/3 flex-col hidden custom:block">
                 <div>
                   <h1
-                    className="text-7xl text-black font-bold aboreto-regular p-2 rounded-lg text-center"
+                    className="text-7xl text-black font-bold poppins-semibold p-2 rounded-lg text-center"
                     style={{
                       background: "linear-gradient(to left, #fe8c00,#f83600)"
                     }}
@@ -335,7 +335,7 @@ const App = () => {
             <div className="flex flex-row mt-12">
               <div className="w-3/5 flex-col hidden custom:block text-center">
                 <h1
-                  className="text-6xl text-black font-bold aboreto-regular rounded-lg p-2"
+                  className="text-6xl text-black font-bold poppins-semibold rounded-lg p-2"
                   style={{
                     background: "linear-gradient(to left, #fe8c00,#f83600)"
                   }}
@@ -372,7 +372,7 @@ const App = () => {
         <section id="music" className="section-3 music my-12">
           <div className="w-full flex flex-col justify-center items-center">
             <h2
-              className="tiny:text-5xl text-4xl custom:text-5xl uppercase font-bold p-4 aboreto-regular text-black rounded-lg text-center"
+              className="tiny:text-5xl text-4xl custom:text-5xl uppercase font-bold p-4 poppins-semibold text-black rounded-lg text-center"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -425,7 +425,7 @@ const App = () => {
         <section id="shows" className="shows section-4 border-b-4 border-white">
           <div className="flex justify-center mb-8">
             <h1
-              className="uppercase text-black text-4xl custom:text-7xl aboreto-regular p-4 font-bold rounded-lg"
+              className="uppercase text-black text-4xl custom:text-7xl poppins-semibold p-4 font-bold rounded-lg"
               style={{
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
@@ -433,7 +433,7 @@ const App = () => {
               upcoming Shows
             </h1>
           </div>
-          <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white aboreto-regular mb-8 mx-4">
+          <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white poppins-semibold mb-8 mx-4">
             <div className="show-date-item">
               <h4 className="text-7xl font-bold">8/24</h4>
               <p className="text-4xl font-bold">
@@ -532,7 +532,7 @@ const App = () => {
           <div className="flex flex-col justify-evenly">
             <div className="w-full flex flex-col justify-center items-center mt-8">
               <h2
-                className="text-5xl custom:text-7xl uppercase font-bold p-4 aboreto-regular text-black rounded-lg"
+                className="text-5xl custom:text-7xl uppercase font-bold p-4 poppins-semibold text-black rounded-lg"
                 style={{
                   background: "linear-gradient(to left, #fe8c00,#f83600)"
                 }}
