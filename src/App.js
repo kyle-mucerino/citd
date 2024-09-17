@@ -258,7 +258,7 @@ const App = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
                     required
-                    className="p-2 text-black rounded-l-lg text-xl custom:text-4xl poppins-medium"
+                    className="p-2 text-black rounded-l-lg text-xl custom:text-4xl poppins-medium w-3/5"
                   />
                   <button
                     type="submit"
