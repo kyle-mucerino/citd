@@ -476,7 +476,7 @@ const App = () => {
               <h4 className="text-6xl">10/18</h4>
               <p className="text-3xl">Sacramento, CA &#x21DD; Old Ironsides</p>
               <a
-                href="https://linktr.ee/Crossingisdottingts"
+                href="https://www.seetickets.us/event/crossing-is-dotting-ts/621654"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl rounded hover:bg-yellow-500"
