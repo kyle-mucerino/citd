@@ -435,20 +435,6 @@ const App = () => {
           </div>
           <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white poppins-medium mb-8 mx-4">
             <div className="show-date-item">
-              <h4 className="text-6xl">8/24</h4>
-              <p className="text-3xl">
-                Boyle Heights, Los Angeles, CA &#x21DD; RSVP Locations TBA
-              </p>
-              <a
-                href="https://linktr.ee/Crossingisdottingts"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl rounded hover:bg-yellow-500"
-              >
-                Get Tickets
-              </a>
-            </div>
-            <div className="show-date-item">
               <h4 className="text-6xl">9/5</h4>
               <p className="text-3xl">Ventura, CA &#x21DD; The Twist</p>
               <a
