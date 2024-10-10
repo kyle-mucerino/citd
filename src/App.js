@@ -510,6 +510,18 @@ const App = () => {
                 Get Tickets
               </a>
             </div>
+            <div className="show-date-item">
+              <h4 className="text-6xl">10/31</h4>
+              <p className="text-3xl">Hollywood, CA &#x21DD; The Viper Room</p>
+              <a
+                href="https://www.eventbrite.com/e/dirty-mondays-presents-demi-the-daredevil-tickets-1041767864727?aff=oddtdtcreator"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl rounded hover:bg-yellow-500"
+              >
+                Get Tickets
+              </a>
+            </div>
           </div>
         </section>
       </Parallax>
