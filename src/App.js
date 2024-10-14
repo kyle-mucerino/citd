@@ -7,6 +7,7 @@ import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BsCaretRightFill } from "react-icons/bs";
 import logo from "./assets/logo3.webp";
 import logoWhite from "./assets/logo3.webp";
+import mobileLogo from "./assets/newLogo.png";
 
 const icons = [
   {
@@ -258,11 +259,11 @@ const App = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
                     required
-                    className="p-2 text-black rounded-l-lg text-xl custom:text-4xl poppins-medium w-3/5"
+                    className="p-2 text-black rounded-l-lg text-xl custom:text-4xl poppins-medium w-3/5 border-black border-2"
                   />
                   <button
                     type="submit"
-                    className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl poppins-medium"
+                    className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl poppins-medium border-black border-2"
                   >
                     Subscribe
                   </button>
@@ -282,7 +283,7 @@ const App = () => {
                 allowFullScreen
               ></iframe>
               <img
-                src={logo2black}
+                src={mobileLogo}
                 alt="logo 2"
                 className="h-1/5 mobile1:hidden"
               ></img>
@@ -472,7 +473,7 @@ const App = () => {
             </div>
             <div className="show-date-item">
               <h4 className="text-6xl">10/19</h4>
-              <p className="text-3xl">Lodi, CA &#x21DD; Wildwood Skateshop</p>
+              <p className="text-3xl">Modesto, CA &#x21DD; House of Crimes</p>
               <a
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
