@@ -7,7 +7,7 @@ import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BsCaretRightFill } from "react-icons/bs";
 import logo from "./assets/logo3.webp";
 import logoWhite from "./assets/logo3.webp";
-import mobileLogo from "./assets/newLogo.png";
+import mobileLogo from "./assets/newLogo2.png";
 
 const icons = [
   {
@@ -297,7 +297,7 @@ const App = () => {
         bgImageStyle={{ objectFit: "cover" }}
         className="hidden custom:block"
         style={{
-          background: "linear-gradient(to top, #000000, #434343)"
+          background: "black"
         }}
       >
         <section id="videos" className="section-2 videos">
@@ -315,41 +315,41 @@ const App = () => {
               <div className="w-2/3 flex-col hidden custom:block">
                 <div>
                   <h1
-                    className="text-7xl text-black poppins-medium p-2 rounded-lg text-center"
+                    className="text-7xl text-white poppins-medium p-2 rounded-lg text-center"
                     style={{
-                      background: "linear-gradient(to left, #fe8c00,#f83600)"
+                      background: "transparent"
                     }}
                   >
                     {" "}
                     &#8592;Latest Music Video
                   </h1>
                 </div>
-                <div>
-                  <img
-                    src={logo2}
-                    alt="logo"
-                    className="h-72 mt-12 ml-36 rounded-3xl"
-                  ></img>
-                </div>
               </div>
+            </div>
+            <div className="flex justify-center items-center">
+              <img
+                src={mobileLogo}
+                alt="logo"
+                className="h-72 mt-12 ml-36 rounded-full"
+              ></img>
             </div>
             <div className="flex flex-row mt-12">
               <div className="w-3/5 flex-col hidden custom:block text-center">
                 <h1
-                  className="text-6xl text-black poppins-medium rounded-lg p-2"
+                  className="text-6xl text-white poppins-medium rounded-lg p-2"
                   style={{
-                    background: "linear-gradient(to left, #fe8c00,#f83600)"
+                    background: "transparent"
                   }}
                 >
                   Far Away Music Video&#8594;
                 </h1>
-                <div>
+                {/* <div>
                   <img
-                    src={logo5}
+                    src={mobileLogo}
                     alt="logo"
                     className="h-72 mt-12 ml-36 rounded-3xl"
                   ></img>
-                </div>
+                </div> */}
               </div>
               <iframe
                 className="w-full col-span-12 custom:col-start-7 col-end-13 aspect-video p-2"
@@ -367,7 +367,7 @@ const App = () => {
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
         style={{
-          background: "linear-gradient(to bottom, #000000, #434343)"
+          background: "black"
         }}
       >
         <section id="music" className="section-3 music my-12">
@@ -420,7 +420,7 @@ const App = () => {
         bgImageStyle={{ objectFit: "contain" }}
         strength={300}
         style={{
-          background: "linear-gradient(to top, #000000, #434343)"
+          background: "black"
         }}
       >
         <section id="shows" className="shows section-4 border-b-4 border-white">
