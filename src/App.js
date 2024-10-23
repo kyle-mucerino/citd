@@ -301,8 +301,8 @@ const App = () => {
         }}
       >
         <section id="videos" className="section-2 videos">
-          <div className="flex flex-col p-4">
-            <div className="flex flex-row">
+          <div className="flex flex-col p-4 items-center">
+            <div className="flex flex-row w-2/3">
               <iframe
                 className="w-full aspect-video p-2 hidden custom:block"
                 src="https://www.youtube.com/embed/quGjvowgqaI"
@@ -312,7 +312,7 @@ const App = () => {
                 allowFullScreen
               ></iframe>
 
-              <div className="w-2/3 flex-col hidden custom:block">
+              {/* <div className="w-2/3 flex-col hidden custom:block">
                 <div>
                   <h1
                     className="text-7xl text-white poppins-medium p-2 rounded-lg text-center"
@@ -324,7 +324,7 @@ const App = () => {
                     &#8592;Latest Music Video
                   </h1>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="flex justify-center items-center">
               <img
@@ -333,8 +333,8 @@ const App = () => {
                 className="h-72 mt-12 ml-36 rounded-full"
               ></img>
             </div>
-            <div className="flex flex-row mt-12">
-              <div className="w-3/5 flex-col hidden custom:block text-center">
+            <div className="flex flex-row mt-12 w-2/3 items-center">
+              {/* <div className="w-3/5 flex-col hidden custom:block text-center">
                 <h1
                   className="text-6xl text-white poppins-medium rounded-lg p-2"
                   style={{
@@ -343,14 +343,7 @@ const App = () => {
                 >
                   Far Away Music Video&#8594;
                 </h1>
-                {/* <div>
-                  <img
-                    src={mobileLogo}
-                    alt="logo"
-                    className="h-72 mt-12 ml-36 rounded-3xl"
-                  ></img>
-                </div> */}
-              </div>
+              </div> */}
               <iframe
                 className="w-full col-span-12 custom:col-start-7 col-end-13 aspect-video p-2"
                 src="https://www.youtube.com/embed/rvG0TKs1vu0"
