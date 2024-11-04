@@ -427,11 +427,12 @@ const App = () => {
               upcoming Shows
             </h1>
           </div>
-          <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white poppins-medium mb-8 mx-4">
+          <div className="show-date-item flex justify-center my-12">
+            <h4 className="text-6xl text-white">Check Back for More Dates Soon!</h4>
+          </div>
+
+          {/* <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white poppins-medium mb-8 mx-4">
             <div className="show-date-item">
-              <h4 className="text-4xl">Check Back for More Dates Soon!</h4>
-            </div>
-            {/* <div className="show-date-item">
               <h4 className="text-6xl">9/5</h4>
               <p className="text-3xl">Ventura, CA &#x21DD; The Twist</p>
               <a
@@ -504,8 +505,8 @@ const App = () => {
               >
                 Get Tickets
               </a>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
         </section>
       </Parallax>
       <Parallax
