@@ -424,17 +424,17 @@ const App = () => {
                 background: "linear-gradient(to left, #fe8c00,#f83600)"
               }}
             >
-              upcoming Shows
+              upcoming Shows 
             </h1>
           </div>
           <div className="show-date-item flex justify-center my-12">
-            <h4 className="text-6xl text-white">Check Back for More Dates Soon!</h4>
+            {/* <h4 className="text-6xl text-white">Check Back for More Dates Soon!</h4> */}
           </div>
 
-          {/* <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white poppins-medium mb-8 mx-4">
+          <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white poppins-medium mb-8 mx-4">
             <div className="show-date-item">
-              <h4 className="text-6xl">9/5</h4>
-              <p className="text-3xl">Ventura, CA &#x21DD; The Twist</p>
+              <h4 className="text-6xl">12/6</h4>
+              <p className="text-3xl">Absolution Brewing &#x21DD; Torrance, CA <br></br>(Free all ages toy drive)</p>
               <a
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
@@ -445,8 +445,8 @@ const App = () => {
               </a>
             </div>
             <div className="show-date-item">
-              <h4 className="text-6xl">10/17</h4>
-              <p className="text-3xl">San Jose, CA &#x21DD; Location TBA</p>
+              <h4 className="text-6xl">12/7</h4>
+              <p className="text-3xl">Coachella Valley, CA &#x21DD; Location TBA <br></br> (Toy Drive)</p>
               <a
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
@@ -456,57 +456,7 @@ const App = () => {
                 Get Tickets
               </a>
             </div>
-            <div className="show-date-item">
-              <h4 className="text-6xl">10/18</h4>
-              <p className="text-3xl">Sacramento, CA &#x21DD; Old Ironsides</p>
-              <a
-                href="https://www.seetickets.us/event/crossing-is-dotting-ts/621654"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl rounded hover:bg-yellow-500"
-              >
-                Get Tickets
-              </a>
-            </div>
-            <div className="show-date-item">
-              <h4 className="text-6xl">10/19</h4>
-              <p className="text-3xl">Modesto, CA &#x21DD; House of Crimes</p>
-              <a
-                href="https://linktr.ee/Crossingisdottingts"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl rounded hover:bg-yellow-500"
-              >
-                Get Tickets
-              </a>
-            </div>
-            <div className="show-date-item">
-              <h4 className="text-6xl">10/20</h4>
-              <p className="text-3xl">
-                Richmond, CA &#x21DD; Prop Shop (Twin Shrieks Fest)
-              </p>
-              <a
-                href="https://linktr.ee/Crossingisdottingts"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl rounded hover:bg-yellow-500"
-              >
-                Get Tickets
-              </a>
-            </div>
-            <div className="show-date-item">
-              <h4 className="text-6xl">10/31</h4>
-              <p className="text-3xl">Hollywood, CA &#x21DD; The Viper Room</p>
-              <a
-                href="https://www.eventbrite.com/e/dirty-mondays-presents-demi-the-daredevil-tickets-1041767864727?aff=oddtdtcreator"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-3 bg-yellow-400 text-black text-2xl rounded hover:bg-yellow-500"
-              >
-                Get Tickets
-              </a>
-            </div>
-          </div> */}
+          </div>
         </section>
       </Parallax>
       <Parallax
