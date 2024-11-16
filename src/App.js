@@ -446,7 +446,7 @@ const App = () => {
             </div>
             <div className="show-date-item">
               <h4 className="text-6xl">12/7</h4>
-              <p className="text-3xl">Coachella Valley, CA &#x21DD; Location TBA <br></br> (Toy Drive)</p>
+              <p className="text-3xl">Coachella Valley, CA &#x21DD; Mesh Screenprinting <br></br> (Toy Drive)</p>
               <a
                 href="https://linktr.ee/Crossingisdottingts"
                 target="_blank"
