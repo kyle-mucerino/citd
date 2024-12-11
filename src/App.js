@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Parallax } from "react-parallax";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BsCaretRightFill } from "react-icons/bs";
 import logo from "./assets/logo3.webp";
 import logoWhite from "./assets/logo3.webp";
 import mobileLogo from "./assets/newLogo2.png";
+import { TextGenerateEffect } from "./TextGenerateEffect";
 
 const icons = [
   {
@@ -28,7 +29,6 @@ const bgImage1 = require("./assets/yourstruly1.jpg");
 const logo5 = require("./assets/logo.jpeg");
 const logo2 = require("./assets/logo2.jpeg");
 const logo2black = require("./assets/logo2black.jpeg");
-// const bgImage2 = require("./assets/band7.jpeg");
 
 const albumPosters = [
   {
@@ -133,7 +133,7 @@ const App = () => {
       });
 
       const data = await response.json();
-      console.log("Response Data:", data); // Debugging line to check what you get
+      console.log("Response Data:", data); 
 
       if (response.ok && data.msg === "Successfully subscribed!") {
         setMessage("Thank you for subscribing!");
@@ -141,7 +141,7 @@ const App = () => {
         setMessage("Something went wrong. Please try again.");
       }
     } catch (error) {
-      console.error("Fetch error:", error); // Debugging line
+      console.error("Fetch error:", error); 
       setMessage("An error occurred. Please try again later.");
     }
     setEmail("");
@@ -181,7 +181,7 @@ const App = () => {
         <section className="section-1 landing-page">
           <div className="flex flex-row h-screen">
             <div className="w-full flex flex-col justify-center items-center">
-              {/* Newsletter Subscription Section */}
+              
               <div className="text-center">
                 <h3 className="text-2xl custom:text-6xl p-2 uppercase mb-4 poppins-medium animate-colorCycle rounded-lg">
                   Subscribe to our newsletter
@@ -244,7 +244,7 @@ const App = () => {
                 alt="Crossing I's Dotting T's"
                 className="custom:hidden w-2/3 bg-black rounded-lg"
               ></img>
-              {/* Newsletter Subscription Section */}
+              
               <div className="text-center">
                 <h3 className="text-2xl custom:text-6xl p-2 uppercase mb-4 poppins-medium animate-colorCycle rounded-lg hidden">
                   Subscribe to our newsletter
@@ -292,7 +292,7 @@ const App = () => {
         </section>
       </div>
       <Parallax
-        // bgImage={bgImage2}
+ 
         strength={300}
         bgImageStyle={{ objectFit: "cover" }}
         className="hidden custom:block"
@@ -312,19 +312,6 @@ const App = () => {
                 allowFullScreen
               ></iframe>
 
-              {/* <div className="w-2/3 flex-col hidden custom:block">
-                <div>
-                  <h1
-                    className="text-7xl text-white poppins-medium p-2 rounded-lg text-center"
-                    style={{
-                      background: "transparent"
-                    }}
-                  >
-                    {" "}
-                    &#8592;Latest Music Video
-                  </h1>
-                </div>
-              </div> */}
             </div>
             <div className="flex justify-center items-center">
               <img
@@ -334,16 +321,6 @@ const App = () => {
               ></img>
             </div>
             <div className="flex flex-row mt-12 w-2/3 items-center">
-              {/* <div className="w-3/5 flex-col hidden custom:block text-center">
-                <h1
-                  className="text-6xl text-white poppins-medium rounded-lg p-2"
-                  style={{
-                    background: "transparent"
-                  }}
-                >
-                  Far Away Music Video&#8594;
-                </h1>
-              </div> */}
               <iframe
                 className="w-full col-span-12 custom:col-start-7 col-end-13 aspect-video p-2"
                 src="https://www.youtube.com/embed/rvG0TKs1vu0"
@@ -428,7 +405,6 @@ const App = () => {
             </h1>
           </div>
           <div className="show-date-item flex justify-center my-12">
-            {/* <h4 className="text-6xl text-white">Check Back for More Dates Soon!</h4> */}
           </div>
 
           <div className="grid grid-cols-1 custom:grid-cols-2 gap-4 text-center text-white poppins-medium mb-8 mx-4">
