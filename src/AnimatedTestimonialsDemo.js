@@ -11,7 +11,7 @@ export function AnimatedTestimonialsDemo() {
       quote:
         "When Matt was asked about the inspiration for the name of the band he replied, \"I don't have to answer that, now go get me a juicebox, juicebox boy\"", 
       name: "MEET THE BAND",
-      designation: "Bass",
+      designation: "Crossing i's Dotting t's",
       src: band
     },
     {
