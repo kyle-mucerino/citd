@@ -17,7 +17,7 @@ export function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl flex flex-col"
       >
-        <img className="" alt="logo" src={vortexLogo} />
+        <img className="" alt="Crossing i's Dotting t's logo" src={vortexLogo} />
         <div className="text-5xl reenie-beanie-regular">Explore More</div>
         <div className="text-xl">&darr;</div>
       </motion.h1>

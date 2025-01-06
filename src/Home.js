@@ -16,7 +16,7 @@ const Home = () => {
         />
         <meta
           name="keywords"
-          content="Crossing i's Dotting t's, band, music, testimonials, creative effects"
+          content="Crossing i's Dotting t's, band, rock music,grunge music, crossing i's dotting t's band, crossing i's dotting t's music"
         />
         <link rel="canonical" href="https://cidtband.com" />
       </Helmet>
