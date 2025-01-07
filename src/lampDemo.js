@@ -15,11 +15,21 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut"
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl flex flex-col"
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl flex flex-col space-y-2"
       >
-        <img className="" alt="Crossing i's Dotting t's logo" src={vortexLogo} />
-        <div className="text-5xl reenie-beanie-regular">Explore More</div>
-        <div className="text-xl">&darr;</div>
+        <img
+          className=""
+          alt="Crossing i's Dotting t's logo"
+          src={vortexLogo}
+        />
+        <h1 className="text-xl sm:text-5xl">
+          Crossing i's Dotting t's - Official Website
+        </h1>
+        <h2 className="text-lg sm:text-4xl reenie-beanie-regular">
+          Welcome to the official website of Crossing i's Dotting t's. Discover
+          our latest music, videos, tour dates, and more!
+        </h2>
+        <h3 className="text-lg sm:text-xl">Explore more below!&darr;</h3>
       </motion.h1>
     </LampContainer>
   );
