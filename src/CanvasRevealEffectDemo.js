@@ -95,7 +95,7 @@ const Card = ({ title, children }) => {
             className="h-44 w-44 group-hover/canvas-card:opacity-100 rounded-full"
           />
         </div>
-        <h2 className="dark:text-white text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 mt-8">
+        <h2 className="dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 mt-8 text-2xl sm:text-3xl">
           {title}
         </h2>
       </a>
