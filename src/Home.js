@@ -23,8 +23,10 @@ const Home = () => {
 
       {/* Page Content */}
       <LampDemo />
-      <AnimatedTestimonialsDemo />
-      <CanvasRevealEffectDemo />
+      <div className="flex flex-row justify-center items-center">
+        <AnimatedTestimonialsDemo />
+        <CanvasRevealEffectDemo />
+      </div>
     </div>
   );
 };

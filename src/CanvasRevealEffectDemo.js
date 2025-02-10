@@ -9,13 +9,14 @@ export function CanvasRevealEffectDemo() {
   return (
     <>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8 uppercase">
-        <Card title="Merchandise">
+        {/* <Card title="Merchandise">
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
-        </Card>
-        <Card title="Upcoming Shows">
+        </Card> */}
+        <Card title="Upcoming Shows 
+        - 2/14 Coachella Valley - Music House Indio (Opening for Man Overboard & Handguns)">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -27,13 +28,13 @@ export function CanvasRevealEffectDemo() {
           />
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Latest Music & Media">
+        {/* <Card title="Latest Music & Media">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
             colors={[[125, 211, 252]]}
           />
-        </Card>
+        </Card> */}
       </div>
     </>
   );
@@ -45,7 +46,7 @@ const Card = ({ title, children }) => {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] max-w-sm w-full mx-auto p-4 relative h-[30rem]"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] sm:w-[32rem] w-full mx-auto p-4 relative h-[30rem]"
     >
       <img
         src={logo2}
@@ -94,7 +95,7 @@ const Card = ({ title, children }) => {
             className="h-44 w-44 group-hover/canvas-card:opacity-100 rounded-full"
           />
         </div>
-        <h2 className="dark:text-white text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="dark:text-white text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 mt-8">
           {title}
         </h2>
       </a>
