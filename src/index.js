@@ -12,6 +12,7 @@ root.render(
       <BrowserRouter>
         <Routes>
           {/* Define the route for the homepage */}
+          <Route path="/" element={<Home />} />
           <Route path="/crossingisdottingts" element={<Home />} />
         </Routes>
       </BrowserRouter>
