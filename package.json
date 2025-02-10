@@ -64,6 +64,7 @@
   },
   "proxy": "http://localhost:5001",
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "eslint-config-react-app": "^7.0.1"
   }
 }
