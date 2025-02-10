@@ -23,7 +23,7 @@ const Home = () => {
 
       {/* Page Content */}
       <LampDemo />
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-col sm:flex-row justify-center items-center">
         <AnimatedTestimonialsDemo />
         <CanvasRevealEffectDemo />
       </div>
