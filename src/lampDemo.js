@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "./lamp";
 import vortexLogo from "./assets/logo3.webp";
+import homepage from "./assets/homepage.jpg";
 
 export function LampDemo() {
   return (

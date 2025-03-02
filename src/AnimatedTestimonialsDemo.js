@@ -3,7 +3,7 @@ import max from "./assets/yourstruly_cidt_max.jpeg";
 import josh from "./assets/yourstruly_cidt_josh.jpeg";
 import matt from "./assets/yourstruly_cidt_matt.jpeg";
 import nye from "./assets/yourstruly_cidt_nye.jpeg";  
-import band from "./assets/yourstruly_cidt_band.jpeg";
+import band from "./assets/homepage.jpg";
 
 export function AnimatedTestimonialsDemo() {
   const testimonials = [

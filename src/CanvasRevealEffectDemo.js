@@ -8,15 +8,17 @@ import logo2 from "./assets/logo3.webp";
 export function CanvasRevealEffectDemo() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8 uppercase">
+      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
         {/* <Card title="Merchandise">
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card> */}
-        <Card title="Upcoming Shows 
-        - 2/14 Coachella Valley - Music House Indio (Opening for Man Overboard & Handguns)">
+        <Card
+          title="Upcoming Shows 
+        - 3/14 - CHAIN REACTION in ANAHEIM with SLOW JOY & NVM"
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
