@@ -4,6 +4,7 @@ import { CanvasRevealEffectDemo } from "./CanvasRevealEffectDemo";
 import { AnimatedTestimonialsDemo } from "./AnimatedTestimonialsDemo";
 import { LampDemo } from "./lampDemo";
 import band from "./assets/homepage2.jpg";
+import logo from "./assets/logo3.webp"
 
 const Home = () => {
   return (
@@ -31,12 +32,13 @@ const Home = () => {
         </div> */}
       </div>
       <div className="bg-black">
-        <div className="flex flex-col p-4 items-center">
-          <img className="h-screen" src={band} alt="full band posing"></img>
+        <div className="flex flex-col p-4 items-center space-y-20 sm:space-y-0">
+          <img className="h-full sm:h-screen" src={band} alt="full band posing"></img>
+          <img className="flex sm:hidden" src={logo} alt="logo"></img>
           <LampDemo />
           <div className="flex flex-row w-full">
             <iframe
-              className="w-full aspect-video p-2 hidden custom:block"
+              className="w-full aspect-video sm:p-2"
               src="https://www.youtube.com/embed/quGjvowgqaI"
               title="YouTube video player"
               frameBorder="0"
