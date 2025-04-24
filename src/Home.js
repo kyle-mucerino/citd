@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <div className="bg-black">
         <div className="flex flex-col p-4 items-center space-y-20 sm:space-y-0">
-          <img className="h-full sm:h-screen" src={band} alt="full band posing"></img>
+          <img className="flex sm:h-screen" src={band} alt="full band posing"></img>
           <img className="flex sm:hidden" src={logo} alt="logo"></img>
           <LampDemo />
           <div className="flex flex-row w-full">
