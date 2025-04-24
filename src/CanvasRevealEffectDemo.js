@@ -16,8 +16,7 @@ export function CanvasRevealEffectDemo() {
           />
         </Card> */}
         <Card
-          title="Upcoming Shows 
-        - 3/14 - CHAIN REACTION in ANAHEIM with SLOW JOY & NVM"
+          title=""
         >
           <CanvasRevealEffect
             animationSpeed={3}

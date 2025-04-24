@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { LampContainer } from "./lamp";
 import vortexLogo from "./assets/logo3.webp";
 import homepage from "./assets/homepage.jpg";
+import mobileLogo from "./assets/newLogo2.png";
 
 export function LampDemo() {
   return (
@@ -18,8 +19,12 @@ export function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl flex flex-col"
       >
-        <img className="" alt="Crossing i's Dotting t's logo" src={vortexLogo} />
-        <div className="text-5xl reenie-beanie-regular">Explore More</div>
+        <img
+          className=""
+          alt="Crossing i's Dotting t's logo"
+          src={vortexLogo}
+        />
+        <div className="text-5xl reenie-beanie-regular">Explore Below</div>
         <div className="text-xl">&darr;</div>
       </motion.h1>
     </LampContainer>
