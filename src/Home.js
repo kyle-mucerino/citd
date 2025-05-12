@@ -79,11 +79,11 @@ const Home = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
-                className="p-2 text-black rounded-l-lg text-2xl custom:text-4xl poppins-medium"
+                className="p-2 text-black rounded-l-lg text-xl custom:text-4xl poppins-medium"
               />
               <button
                 type="submit"
-                className="p-2 bg-blue-500 text-white rounded-r-lg text-2xl custom:text-4xl poppins-medium"
+                className="p-2 bg-blue-500 text-white rounded-r-lg text-xl custom:text-4xl poppins-medium"
               >
                 Subscribe
               </button>
