@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { CanvasRevealEffectDemo } from "./CanvasRevealEffectDemo";
-import { AnimatedTestimonialsDemo } from "./AnimatedTestimonialsDemo";
 import { LampDemo } from "./lampDemo";
 import band from "./assets/homepage2.jpg";
 import logo from "./assets/logo3.webp";
-import logoWhite from "./assets/logo3.webp";
+import tacoFest from "./assets/tacoFest.jpeg";
+import logo1 from "./assets/logo.jpeg";
+import logo2 from "./assets/logo2.jpeg";
+import logo2black from "./assets/logo2black.jpeg";
+import logo2blue from "./assets/logo2blue.png";
+import logo2grey from "./assets/logo2grey.jpeg";
+import logo3 from "./assets/logo3.webp";
+import logo4 from "./assets/logo4.webp";
+import cassette from "./assets/cassette.png";
+
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -79,7 +86,7 @@ const Home = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
-                className="p-2 text-black rounded-l-lg text-xl custom:text-4xl poppins-medium"
+                className="p-2 text-black rounded-l-lg text-xl custom:text-4xl poppins-medium w-2/3 sm:w-3/5"
               />
               <button
                 type="submit"
@@ -94,17 +101,50 @@ const Home = () => {
               </p>
             )}
           </div>
-          <LampDemo />
+          {/* <LampDemo /> */}
+          <div className="flex flex-row space-x-1 mt-4">
+            <img
+              className="h-1/5 rounded-full w-1/5 my-auto"
+              alt="Crossing i's Dotting t's logo"
+              src={logo2black}
+            />
+            <img
+              className="h-1/5 rounded-full w-1/5 my-auto"
+              alt="Crossing i's Dotting t's logo"
+              src={logo1}
+            />
+            <img
+              className="h-1/5 rounded-lg w-1/5 my-auto"
+              alt="Crossing i's Dotting t's logo"
+              src={logo3}
+            />
+            <img
+              className="h-1/5 rounded-full w-1/5 my-auto"
+              alt="Crossing i's Dotting t's logo"
+              src={cassette}
+            />
+            <img
+              className="h-1/5 rounded-full w-1/5 my-auto"
+              alt="Crossing i's Dotting t's logo"
+              src={logo2blue}
+            />
+          </div>
           <div className="flex flex-row w-full">
             <iframe
               className="w-full aspect-video sm:p-2"
-              src="https://www.youtube.com/embed/quGjvowgqaI"
+              src="https://www.youtube.com/embed/iSjPbjrwm7w"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
+          <div className="text-center">
+            <h3 className="text-3xl custom:text-6xl p-2 uppercase poppins-medium text-white">
+              Come see us play
+            </h3>
+          </div>
+          <img className="flex sm:p-8 sm:h-4/5 sm:w-4/5" src={tacoFest} alt="taco fest lineup"></img>
         </div>
       </div>
     </>
