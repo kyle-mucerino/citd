@@ -143,8 +143,18 @@ const Home = () => {
             <h3 className="text-3xl custom:text-6xl p-2 uppercase poppins-medium text-white">
               Come see us play
             </h3>
+          <a
+            href="https://www.brownpapertickets.com/event/6655257"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="flex sm:p-8 sm:h-4/5 sm:w-4/5 mx-auto hover:scale-105 transition-transform duration-300"
+              src={tacoFest}
+              alt="taco fest lineup"
+            />
+          </a>
           </div>
-          <img className="flex sm:p-8 sm:h-4/5 sm:w-4/5" src={tacoFest} alt="taco fest lineup"></img>
         </div>
       </div>
     </>
