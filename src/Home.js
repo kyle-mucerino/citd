@@ -12,6 +12,7 @@ import logo2grey from "./assets/logo2grey.jpeg";
 import logo3 from "./assets/logo3.webp";
 import logo4 from "./assets/logo4.webp";
 import cassette from "./assets/cassette.png";
+import flyer01 from "./assets/flyer01.png";
 
 
 const Home = () => {
@@ -68,7 +69,14 @@ const Home = () => {
         </div> */}
       </div>
       <div className="bg-black">
-        <div className="flex flex-col p-4 items-center space-y-20 sm:space-y-0">
+        <div className="hidden sm:flex flex-row space-x-4 justify-end text-white uppercase text-md sm:text-2xl font-bold mr-2 sm:mr-4 pt-1">
+          <a href="#merch">merch</a>
+          <p>|</p>
+          <a href="#music">music</a>
+          <p>|</p>
+          <a href="#shows">shows</a>
+        </div>
+        <div className="flex flex-col p-2 items-center space-y-20 sm:space-y-0">
           <img
             className="flex sm:h-screen"
             src={band}
@@ -129,7 +137,17 @@ const Home = () => {
               src={logo2blue}
             />
           </div>
-          <div className="flex flex-row w-full">
+          <div className="flex flex-col text-center" id="merch">
+            <a
+              className="text-2xl custom:text-6xl sm:p-4 uppercase mb-4 poppins-medium rounded-lg text-white border-white border-4 hover:scale-105 transition-transform duration-300 mt-4 sm:mt-8"
+              href="https://crossingtsdottingis.bandcamp.com/merch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click me for Merch store
+            </a>
+          </div>
+          <div className="flex flex-row w-full" id="music">
             <iframe
               className="w-full aspect-video sm:p-2"
               src="https://www.youtube.com/embed/iSjPbjrwm7w"
@@ -139,22 +157,32 @@ const Home = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="text-center">
+          <div className="text-center" id="shows">
             <h3 className="text-3xl custom:text-6xl p-2 uppercase poppins-medium text-white">
               Come see us play
             </h3>
-          <a
-            href="https://www.brownpapertickets.com/event/6655257"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="flex sm:p-8 sm:h-4/5 sm:w-4/5 mx-auto hover:scale-105 transition-transform duration-300"
-              src={tacoFest}
-              alt="taco fest lineup"
-            />
-          </a>
+            <a
+              href="https://www.brownpapertickets.com/event/6655257"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="flex sm:p-4 sm:h-4/5 sm:w-4/5 mx-auto hover:scale-105 transition-transform duration-300"
+                src={flyer01}
+                alt="flyer for Crossing i's Dotting t's"
+              />
+            </a>
           </div>
+          {/* <div className="flex flex-col text-center">
+            <a
+              className="text-2xl custom:text-6xl sm:p-4 uppercase mb-4 poppins-medium rounded-lg text-white border-white border-4 hover:scale-105 transition-transform duration-300 mt-4 sm:mt-8"
+              href="https://crossingtsdottingis.bandcamp.com/merch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click me for Merch store
+            </a>
+          </div> */}
         </div>
       </div>
     </>
