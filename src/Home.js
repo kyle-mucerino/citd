@@ -139,7 +139,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col text-center">
             <a
-              className="text-2xl custom:text-6xl sm:p-4 uppercase mb-4 poppins-medium rounded-lg text-white border-white border-4 hover:scale-105 transition-transform duration-300 mt-4 sm:mt-8"
+              className="text-2xl custom:text-6xl p-2 sm:p-4 uppercase mb-2 sm:mb-4 poppins-medium rounded-lg text-white border-white border-4 hover:scale-105 transition-transform duration-300 mt-2 sm:mt-8"
               href="https://crossingtsdottingis.bandcamp.com/merch"
               target="_blank"
               rel="noopener noreferrer"
