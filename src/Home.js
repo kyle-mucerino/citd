@@ -83,7 +83,7 @@ const Home = () => {
             alt="full band posing"
           ></img>
           <img className="flex sm:hidden" src={logo} alt="logo"></img>
-          <div className="text-center">
+          <div className="text-center" id="merch">
             <h3 className="text-2xl custom:text-6xl p-2 uppercase mb-4 poppins-medium rounded-lg text-white">
               Subscribe to our newsletter
             </h3>
@@ -137,7 +137,7 @@ const Home = () => {
               src={logo2blue}
             />
           </div>
-          <div className="flex flex-col text-center" id="merch">
+          <div className="flex flex-col text-center">
             <a
               className="text-2xl custom:text-6xl sm:p-4 uppercase mb-4 poppins-medium rounded-lg text-white border-white border-4 hover:scale-105 transition-transform duration-300 mt-4 sm:mt-8"
               href="https://crossingtsdottingis.bandcamp.com/merch"
