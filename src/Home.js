@@ -76,7 +76,7 @@ const Home = () => {
           <p>|</p>
           <a href="#shows">shows</a>
         </div>
-        <div className="flex flex-col p-2 items-center space-y-20 sm:space-y-0">
+        <div className="flex flex-col p-2 items-center space-y-12 sm:space-y-0">
           <img
             className="flex sm:h-screen"
             src={band}
@@ -110,7 +110,7 @@ const Home = () => {
             )}
           </div>
           {/* <LampDemo /> */}
-          <div className="flex flex-row space-x-1 mt-4">
+          <div className="flex flex-row space-x-1 mt-4 p-2 sm:p-4">
             <img
               className="h-1/5 rounded-full w-1/5 my-auto"
               alt="Crossing i's Dotting t's logo"
@@ -147,42 +147,65 @@ const Home = () => {
               Click me for Merch store
             </a>
           </div>
-          <div className="flex flex-row w-full" id="music">
-            <iframe
-              className="w-full aspect-video sm:p-2"
-              src="https://www.youtube.com/embed/iSjPbjrwm7w"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <div className="text-center" id="shows">
-            <h3 className="text-3xl custom:text-6xl p-2 uppercase poppins-medium text-white">
-              Come see us play
-            </h3>
-            <a
-              href="https://www.brownpapertickets.com/event/6655257"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="flex sm:p-4 sm:h-4/5 sm:w-4/5 mx-auto hover:scale-105 transition-transform duration-300"
-                src={flyer01}
-                alt="flyer for Crossing i's Dotting t's"
-              />
-            </a>
-          </div>
-          {/* <div className="flex flex-col text-center">
-            <a
-              className="text-2xl custom:text-6xl sm:p-4 uppercase mb-4 poppins-medium rounded-lg text-white border-white border-4 hover:scale-105 transition-transform duration-300 mt-4 sm:mt-8"
-              href="https://crossingtsdottingis.bandcamp.com/merch"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click me for Merch store
-            </a>
-          </div> */}
+        </div>
+        <div className="flex flex-row w-full" id="music">
+          <iframe
+            className="w-full aspect-video sm:p-2"
+            src="https://www.youtube.com/embed/iSjPbjrwm7w"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="text-center">
+          <h3 className="text-3xl custom:text-6xl p-2 uppercase poppins-medium text-white my-2 sm:my-4">
+            Come see us play
+          </h3>
+          <img
+            className="flex sm:p-4 sm:h-4/5 sm:w-4/5 mx-auto"
+            src={flyer01}
+            alt="flyer for Crossing i's Dotting t's"
+          />
+        </div>
+        <div
+          className="flex flex-col text-center space-y-4 sm:space-y-8 p-4 w-full sm:w-3/4
+          mx-auto bg-slate-300 text-black rounded-lg"
+          id="shows"
+        >
+          <h1 className=" text-3xl custom:text-6xl uppercase poppins-medium">
+            tickets
+          </h1>
+          <a
+            href="https://www.eventbrite.com/e/bloodlines-confessions-of-a-traitor-lightworker-tickets-1277284354889"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="text-xl leading-loose custom:text-4xl uppercase poppins-medium rounded-lg mx-auto underline decoration-4 underline-offset-8">
+              Summer fox brewing | Fresno, CA | 6/27
+            </p>
+          </a>
+          <a
+            href="https://www.brownpapertickets.com/event/6655257"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className=" text-xl custom:text-4xl uppercase poppins-medium rounded-lg mx-auto underline decoration-4 underline-offset-8">
+              Taco fest | Richmond, CA | 6/28
+            </p>
+          </a>
+          <a
+            href="https://dice.fm/event/pyam2y-crossing-is-dotting-ts-silent-vice-rain-on-fridays-9th-jul-soda-bar-san-diego-tickets?lng=en-US"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className=" text-xl custom:text-4xl uppercase poppins-medium rounded-lg mx-auto underline decoration-4 underline-offset-8">
+              Soda Bar | San Diego | 7/9
+            </p>
+          </a>
+        </div>
+        <div className="text-center sm:p-4">
+          Find our hidden message if you can muah hahahahahhaha
         </div>
       </div>
     </>
