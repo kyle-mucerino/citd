@@ -13,7 +13,7 @@ import logo3 from "./assets/logo3.webp";
 import logo4 from "./assets/logo4.webp";
 import cassette from "./assets/cassette.png";
 import flyer01 from "./assets/flyer01.png";
-
+import flyer02 from "./assets/Newpic925.jpeg";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -164,11 +164,11 @@ const Home = () => {
           </h3>
           <img
             className="flex sm:p-4 sm:h-4/5 sm:w-4/5 mx-auto"
-            src={flyer01}
+            src={flyer02}
             alt="flyer for Crossing i's Dotting t's"
           />
         </div>
-        <div
+        {/* <div
           className="flex flex-col text-center space-y-4 sm:space-y-8 p-4 w-full sm:w-3/4
           mx-auto bg-slate-300 text-black rounded-lg"
           id="shows"
@@ -203,7 +203,7 @@ const Home = () => {
               Soda Bar | San Diego | 7/9
             </p>
           </a>
-        </div>
+        </div> */}
         <div className="text-center sm:p-4">
           Find our hidden message if you can muah hahahahahhaha
         </div>
