@@ -78,13 +78,13 @@ const Home = () => {
           <a href="#shows">shows</a>
         </div>
         <div className="flex flex-col p-2 items-center space-y-12 sm:space-y-0">
-          <button className="p-2 pb-4 bg-white text-black rounded-lg text-xl custom:text-4xl poppins-medium hover:scale-105 transition-transform duration-300">
+          <button className="p-2 pb-4 bg-white text-black rounded-lg text-xl custom:text-4xl poppins-bold">
             <a
               href="https://cleorecs.com/search?q=crossing+i%27s+dotting+t%27s"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Buy Vinyl &#8595;
+              &#8595; Buy Vinyl &#8595;
             </a>
           </button>
           <img
