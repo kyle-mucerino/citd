@@ -84,7 +84,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              &#8595; Buy Vinyl &#8595;
+              Buy Vinyl 
             </a>
           </button>
           <img
