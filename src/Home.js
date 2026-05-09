@@ -14,6 +14,7 @@ import logo4 from "./assets/logo4.webp";
 import cassette from "./assets/cassette.png";
 import flyer01 from "./assets/flyer01.png";
 import flyer02 from "./assets/Newpic925.jpeg";
+import vinyl from "./assets/vinyl.png";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -77,6 +78,11 @@ const Home = () => {
           <a href="#shows">shows</a>
         </div>
         <div className="flex flex-col p-2 items-center space-y-12 sm:space-y-0">
+          <img
+            className="flex sm:h-screen"
+            src={vinyl}
+            alt="vinyl record"
+          ></img>
           <img
             className="flex sm:h-screen"
             src={band}
