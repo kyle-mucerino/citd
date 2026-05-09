@@ -78,7 +78,7 @@ const Home = () => {
           <a href="#shows">shows</a>
         </div>
         <div className="flex flex-col p-2 items-center space-y-12 sm:space-y-0">
-          <button className="p-2 pb-4 bg-white-500 text-black rounded-lg text-xl custom:text-4xl poppins-medium hover:scale-105 transition-transform duration-300">
+          <button className="p-2 pb-4 bg-white text-black rounded-lg text-xl custom:text-4xl poppins-medium hover:scale-105 transition-transform duration-300">
             <a
               href="https://cleorecs.com/search?q=crossing+i%27s+dotting+t%27s"
               target="_blank"
@@ -88,7 +88,7 @@ const Home = () => {
             </a>
           </button>
           <img
-            className="flex sm:h-screen hover:scale-105 transition-transform duration-300 cursor-pointer"
+            className="flex p-4 hover:scale-105 transition-transform duration-300 cursor-pointer"
             src={vinyl}
             alt="vinyl record"
             href="https://cleorecs.com/search?q=crossing+i%27s+dotting+t%27s"
