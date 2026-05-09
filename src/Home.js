@@ -78,9 +78,13 @@ const Home = () => {
           <a href="#shows">shows</a>
         </div>
         <div className="flex flex-col p-2 items-center space-y-12 sm:space-y-0">
-          <button className="p-2 bg-blue-500 text-white rounded-lg text-xl custom:text-4xl poppins-medium hover:scale-105 transition-transform duration-300">
-            <a href="https://cleorecs.com/search?q=crossing+i%27s+dotting+t%27s" target="_blank" rel="noopener noreferrer">
-            Buy Vinyl
+          <button className="p-2 pb-4 bg-white-500 text-black rounded-lg text-xl custom:text-4xl poppins-medium hover:scale-105 transition-transform duration-300">
+            <a
+              href="https://cleorecs.com/search?q=crossing+i%27s+dotting+t%27s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buy Vinyl &#8595;
             </a>
           </button>
           <img
