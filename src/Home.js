@@ -174,7 +174,7 @@ const Home = () => {
             allowFullScreen
           ></iframe>
         </div>
-        <div className="text-center">
+        <div className="text-center" id="shows">
           <h3 className="text-3xl custom:text-6xl p-2 uppercase poppins-medium text-white my-2 sm:my-4">
             Come see us play
           </h3>
