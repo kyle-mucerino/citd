@@ -84,11 +84,11 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Buy Vinyl 
+              Buy Vinyl
             </a>
           </button>
           <img
-            className="flex p-4 cursor-pointer"
+            className="flex p-4 cursor-pointer hover:scale-101 transition-transform duration-300"
             src={vinyl}
             alt="vinyl record"
             href="https://cleorecs.com/search?q=crossing+i%27s+dotting+t%27s"
