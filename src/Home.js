@@ -78,6 +78,11 @@ const Home = () => {
           <a href="#shows">shows</a>
         </div>
         <div className="flex flex-col p-2 items-center space-y-12 sm:space-y-0">
+          <button>
+            <a href="https://cleorecs.com/search?q=crossing+i%27s+dotting+t%27s" target="_blank" rel="noopener noreferrer">
+            Buy Vinyl
+            </a>
+          </button>
           <img
             className="flex sm:h-screen"
             src={vinyl}
