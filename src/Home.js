@@ -88,7 +88,7 @@ const Home = () => {
             </a>
           </button>
           <img
-            className="flex p-4 cursor-pointer hover:scale-75 transition-transform duration-300"
+            className="flex p-4 cursor-pointer"
             src={vinyl}
             alt="vinyl record"
             href="https://cleorecs.com/search?q=crossing+i%27s+dotting+t%27s"
