@@ -15,6 +15,7 @@ import cassette from "./assets/cassette.png";
 import flyer01 from "./assets/flyer01.png";
 import flyer02 from "./assets/Newpic925.jpeg";
 import vinyl from "./assets/vinyl.png";
+import tourPoster from "./assets/tourPosterSummer2026.PNG";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -167,7 +168,7 @@ const Home = () => {
         <div className="flex flex-row w-full" id="music">
           <iframe
             className="w-full aspect-video sm:p-2"
-            src="https://www.youtube.com/embed/iSjPbjrwm7w"
+            src="https://www.youtube.com/watch?v=Y8BcCi-VhA4"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -180,7 +181,7 @@ const Home = () => {
           </h3>
           <img
             className="flex sm:p-4 sm:h-4/5 sm:w-4/5 mx-auto"
-            src={flyer02}
+            src={tourPoster}
             alt="flyer for Crossing i's Dotting t's"
           />
         </div>
