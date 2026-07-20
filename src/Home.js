@@ -15,7 +15,7 @@ import cassette from "./assets/cassette.png";
 import flyer01 from "./assets/flyer01.png";
 import flyer02 from "./assets/Newpic925.jpeg";
 import vinyl from "./assets/vinyl.png";
-import tourPoster from "./assets/tourPosterSummer2026.PNG";
+import tourPoster from "./assets/tourPosterSummer26.png";
 
 const Home = () => {
   const [email, setEmail] = useState("");
