@@ -167,12 +167,14 @@ const Home = () => {
         </div>
         <div className="flex flex-row w-full" id="music">
           <iframe
-            className="w-full aspect-video sm:p-2"
-            src="https://www.youtube.com/watch?v=Y8BcCi-VhA4"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Y8BcCi-VhA4?si=20Hs2CjvjBtmbgzb"
             title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
           ></iframe>
         </div>
         <div className="text-center" id="shows">
