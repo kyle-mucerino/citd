@@ -167,8 +167,7 @@ const Home = () => {
         </div>
         <div className="flex flex-row w-full" id="music">
           <iframe
-            width="560"
-            height="315"
+            className="w-full aspect-video sm:p-2"
             src="https://www.youtube.com/embed/Y8BcCi-VhA4?si=20Hs2CjvjBtmbgzb"
             title="YouTube video player"
             frameborder="0"
